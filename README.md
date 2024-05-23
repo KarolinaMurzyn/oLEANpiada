@@ -21,5 +21,4 @@ The website was built using modern web development technologies, including HTML5
 ## Future Enhancements
 The current version of the website fulfills the primary objectives, however the long-term plan is to develop a website for the overarching AGH Lean Line 4.0 project. Within this larger platform, the "oLEANpiada" competition will be integrated as a dedicated subpage.
 
-
-### You can visit the "oLEANpiada" website here: https://aghleanline.pl/
+**You can visit the "oLEANpiada" website here: https://aghleanline.pl/**
