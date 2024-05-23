@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/naglowek.css"> 
+        <link rel="stylesheet" type="text/css" href="css/responsywnosc.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/prawa_strona.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/stopka.css"> 
+        <link rel="stylesheet" type="text/css" href="css/test.css"> 
+       
+        <script src="../js/main.js" defer></script>
+        <script src="../js/rozwijane_menu.js" ></script>
+        <script src="../js/przesuniecie_do_sekcji.js" ></script>
+        <script src="js/test.js" ></script>
+
+         <!--STZAŁKI KALENDARZ-->
+        <script src="https://kit.fontawesome.com/739b0b141c.js" crossorigin="anonymous"></script> 
+
+        <link rel="icon" type="image/png" href="../grafika/logo.jpg">
+        <meta property="og:image" content="../grafika/logo.jpg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <meta name="description" content="VI edycja oLEANpiady">
+       
+        <title> oLEANpiada</title>
+       
+    </head>
+    <body>
+
+
+        <header>
+           
+
+            <div class="collage">
+
+                
+            </div>
+        
+            <div class="nawigacja" style="height:60px" >
+
+                <div class="menu">
+
+                
+                    <ul class="sekcje">
+
+                     
+                        
+                        <a class="material-symbols-outlined" href="../index.html" style="text-align: right; justify-content: right;display: flex;">
+                            <span class="material-symbols-outlined" style="font-size:40px; ;">home</span>
+                        </a>
+                        
+
+                        
+                        
+                    </ul>   
+
+
+                </div> 
+
+                <div class="przeswit"></div>
+
+                
+
+            </div>
+
+           
+        </header>
+
+        
+
+        <div class="srodek">
+
+            
+            <article>
+                <h2 id="kalendarium" style="font-size: 17px;font-weight: bold; margin: 40px 0 40px;">
+                    KALENDARIUM
+                    <br>
+                </h2>
+                <!-- KALENDARZ -->
+                <div class="kontyner">
+
+                    
+                    <div class="calendar">
+                        
+                        <div class="header">
+                             <button id="prevBtn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                             <div class="monthYear" id="monthYear"></div>
+                            <button id="nextBtn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="days">
+                            <div class="day">pn</div>
+                            <div class="day">wt</div>
+                            <div class="day">śr</div>
+                            <div class="day">cz</div>
+                            <div class="day">pt</div>
+                            <div class="day">sb</div>
+                            <div class="day">nd</div>
+                        </div>
+
+                         <div class="dates" id="dates"></div>
+                    </div>
+
+                                
+                            
+                    
+                    <div class="najwazniejsze_daty">
+                            
+                        <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Harmonogram oLEANpiady</h3>
+
+                        <ul class="daty">
+                            <li>Rekrutacja elektroniczna <br> 4.03.2024 – 27.03.2024</li>
+                            <li>Termin przesyłania zadania kwalifikacyjnego <br> 27.03.2024</li>
+                            <li>Ogłoszenie zespołów zakwalifikowanych do finału oLEANpiady <br> 3.04.2024</li>
+                            <li>Centralny finał oLEANpiady w AGH <br> 22.04.2024 </br></li>
+                                
+                                
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="dokumentacja">
+
+                    <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Dokumenty </h3>
+
+                     <ul class="dokumenty">
+                        <li><a href="../dokumenty/Oferta_oLEANpiada_.pdf" > Oferta dla szkół</a></li>
+ 			            <li><a href="../dokumenty/REGULAMIIN-oLEANpiada.pdf" >Regulamin</a></li>	
+                        <li><a href="../dokumenty/Kompendium-główne.pdf" >Kompendium wiedzy</a></li>	
+                    </ul>
+                </div>
+                <div class="loga">
+
+                    <div class="sknz_logo">
+
+                        <a href="https://skn.agh.edu.pl/kolo/studenckie-kolo-naukowe-zarzadzanie/">
+                            <img id="sknz_logo" src="../grafika/sknz.png" alt="">
+                        </a>
+                        
+                    </div>
+
+                    <div class="faculty_logo">
+
+                        <a href="https://wilgz.agh.edu.pl/">
+                            <img id="faculty_logo" src="../grafika/logo_wydzial.png" alt="">
+                        </a>
+                        
+                    </div>
+
+
+                    <div class="agh_logo">
+
+                        <a href="https://www.agh.edu.pl/">
+                            <img id="agh_logo" src="../grafika/LogoAGH_symbol_kolor_RGB-01.png" alt="">
+                        </a>
+                        
+                    </div>
+
+                </div>
+                    
+               
+            </article>
+
+            <article id="contents">
+
+               
+             
+
+
+
+
+                <div class="oleanpiada" id="oleanpiada">
+                    <h2 id="og">
+                        SPRAWDŹ SIĘ
+
+                    </h2>
+                    
+                </div>
+
+
+                <div id="quiz-container">
+                    <form id="quiz-form">
+
+                        <div class="question" id="question1">
+                            <label for="question1" class="question_label">Pytanie 1: Za co odpowiada litera „M” w metodzie DMAIC?</label>
+                            <div class="choices">
+                                <div class="wrap">
+                                    <input type="radio" id="question1a" name="question1" value="a">
+                                    <label for="question1a">A. definiowanie</label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question1b" name="question1" value="b">
+                                    <label for="question1b">B. pomiar</label><br>
+                                </div>
+
+                                <div class="wrap">
+                                    <input type="radio" id="question1c" name="question1" value="c">
+                                    <label for="question1c">C. monitorowanie </label>
+                                </div>    
+                                
+                                <div class="wrap">
+                                    <input type="radio" id="question1d" name="question1" value="d">
+                                    <label for="question1d">D. analizę</label>
+                                </div>
+                            </div>
+                            <div class="answer-panel" id="answer-panel1">
+                               
+                            </div>
+                        </div>
+                        
+                        
+                       
+                       <div class="question" id="question2">
+
+                            <label for="question2" class="question_labe2">Pytanie 2: Co zaliczamy do filarów Domu Toyoty?</label>
+                            <div class="choices">
+                                
+                                <div class="wrap">
+                                    <input type="radio" id="question2a" name="question2" value="a">
+                                    <label for="question2a">A. Just in Time oraz One-Piece-Flow</label><br>
+                                </div>
+
+                                <div class="wrap"> 
+                                    <input type="radio" id="question2b" name="question2" value="b">
+                                    <label for="question2b">B. Just in Time oraz Jidoka</label><br>
+                                </div>
+
+                                <div class="wrap">
+                                    <input type="radio" id="question2c" name="question2" value="c">
+                                    <label for="question2c">C. On-Piece-Flow oraz Heijunka</label>
+                                </div>
+
+                                <div class="wrap">
+                                    <input type="radio" id="question2d" name="question2" value="d">
+                                    <label for="question2d">D. 5S oraz Heijunka</label>
+                                </div>
+                            </div>
+
+                            <div class="answer-panel" id="answer-panel2">
+                                
+                            </div>
+                        </div>
+
+                        <div class="question" id="question3">
+                            <label for="question3" class="question_label">Pytanie 3: Kanban to:</label>
+                            <div class="choices">
+
+                                <div class="wrap">
+                                    <input type="radio" id="question3a" name="question3" value="a">
+                                    <label for="question3a">A.  straty obniżające efektywne zużycie dostępnych środków </label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question3b" name="question3" value="b">
+                                    <label for="question3b">B.  plakietka będąca narzędziem kontroli nad produkcją w systemie JIT </label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question3c" name="question3" value="c">
+                                    <label for="question3c">C.  słowo określające nadmierne obciążenie maszyn</label>
+                                </div>
+                                <div class="wrap"> 
+                                    <input type="radio" id="question3d" name="question3" value="d">
+                                    <label for="question3d">C. ciągłe doskonalenie</label>
+                                </div>
+
+                            </div>
+                            <div class="answer-panel" id="answer-panel3">
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="question" id="question4">
+                            <label for="question4" class="question_label">Pytanie 4: System Just in time prowadzi do takiej organizacji produkcji, aby:</label>
+                            <div class="choices">
+                                <div class="wrap">
+                                    <input type="radio" id="question4a" name="question4" value="a">
+                                    <label for="question4a">A.  operacje miały miejsce dokładnie w momencie, kiedy są potrzebne </label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question4b" name="question4" value="b">
+                                    <label for="question4b">B.  zapasy produkcji w toku pozostały bez zmian</label><br>
+                                </div>  
+                                <div class="wrap">    
+                                    <input type="radio" id="question4c" name="question4" value="c">
+                                    <label for="question4c">C.  stworzyć kulturę przerywania procesów w celu rozwiązywania problemów, by od razu uzyskiwać właściwą jakość </label>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question4d" name="question4" value="d">
+                                    <label for="question4d">D. stosować wyłącznie niezawodną, gruntownie sprawdzoną technologię, służącą pracownikom i procesom </label>
+                                </div>
+                                </div>
+                            <div class="answer-panel" id="answer-panel4">
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="question" id="question5">
+                            <label for="question5" class="question_label">Pytanie 5: Lampa Andon świecąca na żółto pokazuje stan: </label>
+                            <div class="choices">
+                                <div class="wrap">
+                                    <input type="radio" id="question5a" name="question5" value="a">
+                                    <label for="question5a">A.  normalna praca </label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question5b" name="question5" value="b">
+                                    <label for="question5b">B.  brak materiału w kolejce do obróbki </label><br>
+                                </div>
+                                <div class="wrap"> 
+                                    <input type="radio" id="question5c" name="question5" value="c">
+                                    <label for="question5c">C.  zakłócenie zauważone przez pracownika </label>
+                                </div>
+                                <div class="wrap">    
+                                    <input type="radio" id="question5d" name="question5" value="d">
+                                    <label for="question5d">D. awaria</label>
+                                </div>
+                            </div>
+                            <div class="answer-panel" id="answer-panel5">
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="question" id="question6">
+                            <label for="question6" class="question_label">Pytanie 6: Do których typów przedsiębiorstw skierowana jest filozofia Lean Management?</label>
+                            <div class="choices">
+                                <div class="wrap">
+                                    <input type="radio" id="question6a" name="question6" value="a">
+                                    <label for="question6a">A.  tylko dla przedsiębiorstw usługowych</label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question6b" name="question6" value="b"> 
+                                    <label for="question6b">B.  tylko dla przedsiębiorstw produkcyjnych</label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question6c" name="question6" value="c">
+                                    <label for="question6c">C.  tylko dla przedsiębiorstw państwowych</label>
+                                </div>  
+                                <div class="wrap">
+                                    <input type="radio" id="question6d" name="question6" value="d">
+                                    <label for="question6d">D. jest adaptowalna do każdego typu przedsiębiorstwa</label>
+                                </div>
+                            </div>
+                            <div class="answer-panel" id="answer-panel6">
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="question" id="question7">
+                            <label for="question7" class="question_label">Pytanie 7:Do sukcesu stosowania której metody niezbędne jest zadawanie inteligentnych pytań?</label>
+                            <div class="choices">
+                                <div class="wrap">
+                                    <input type="radio" id="question7a" name="question7" value="a">
+                                    <label for="question7a">A.  5WHY</label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question7b" name="question7" value="b">
+                                    <label for="question7b">B.  Diagram Ishikawy</label><br>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question7c" name="question7" value="c">
+                                    <label for="question7c">C.  Kaizen</label>
+                                </div>
+                                <div class="wrap">
+                                    <input type="radio" id="question7d" name="question7" value="d">
+                                    <label for="question7d">D. Poka-Yoke</label>
+                                </div>
+
+                            </div>
+                            <div class="answer-panel" id="answer-panel7">
+                                
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="buttons">
+                            <input type="submit" id="submit-btn" value="Submit">
+                            <button id="restart-btn" style="display: none;">Restart Quiz</button>
+                        </div>
+
+                        </form>
+                    <div id="result"></div>
+                </div>
+
+                
+
+                
+
+
+
+
+            </article>
+
+
+           
+                             
+
+        </div>
+
+        <footer id="footer">
+            
+
+            <div class="contact-info">
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p style="font-weight: bold;">KOORDYNATOR KONKURSU</p>
+                    <br>
+                </div>
+
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p>inż. Szymon Ziaja</p>
+                    <p>e-mail: oleanpiada.agh@gmail.com </p>
+                </div>
+
+                
+            </div>
+
+
+            <div class="contact-info">
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p style="font-weight: bold;text-transform: uppercase;">Prezes SKN Zarządzanie</p>
+                    <br>
+                </div>
+
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p>inż. Karolina Sapko</p>
+                    <p>e-mail: lsapko@student.agh.edu.pl</p>
+                </div>
+
+                
+            </div>
+
+            <div class="social_media">
+                <p>Obserwuj nas</p>
+                <a href="https://www.instagram.com/sknz.agh?igsh=ZDlwZDlnaWVibWVh" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/SKNZ.AGH?locale=pl_PL" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/events/2672219489598701?locale=pl_PL" target="_blank"><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+                    
+            </div>
+
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2561.255825779431!2d19.922701289742953!3d50.06277042801862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba756b59b21%3A0xb20c8dba21b317d1!2sAkademia%20G%C3%B3rniczo-Hutnicza%20im.%20Stanis%C5%82awa%20Staszica%20w%20Krakowie!5e0!3m2!1spl!2spl!4v1709121972316!5m2!1spl!2spl"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+ 	        <div class="grant">
+
+                <p> 
+                    oLEANpiada 2024 jest interdyscyplinarnym konkursem, organizowanym przez Studenckie Koło Naukowe Zarządzanie w ramach realizacji Grantu Rektora AGH - AGH LeanLine 4.0
+
+                </p>
+            
+                
+
+                
+            </div>
+        </footer>
+
+       
+        
+
+    </body>
+</html>

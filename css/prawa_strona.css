@@ -1,0 +1,191 @@
+
+h2{
+    margin-bottom:12px ;
+    text-align: center; 
+}
+.oleanpiada{
+    margin-top:20px ;
+    text-align:justify;
+    padding: 0 80px 35px;
+    
+}
+
+.oleanpiada h3{
+
+    font-size: 22px;
+    text-align: center;
+}
+
+h3#final{
+
+   margin-top: 20px;
+
+
+
+}
+
+h3.final{
+    font-size: 18px;;
+    
+}
+
+
+#contents{
+
+    width: 100%;
+}
+.oleanpiada p{
+    font-size: 20px;
+
+    line-height: 25px;
+}
+.informacje{
+    padding:30px 20px;
+    
+}
+
+.when,
+.where,
+.who{
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+    padding-bottom: 5px;
+
+    align-items: center;
+   
+    justify-content: center;
+}
+
+
+.when_graphic,
+.where_graphic,
+.who_graphic{
+
+    display: flex;
+    flex-direction: row;
+
+
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+
+    padding: 10px 0 10px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+
+.when_graphic span,
+.where_graphic span,
+.who_graphic span{
+    padding:0 15px ;
+
+}
+
+.when_graphic p,
+.where_graphic p,
+.who_graphic p{
+
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+p.text{
+
+    width: 80%;
+    padding:10px 40px;
+    
+
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+
+    background-color: #62CACA;
+    border-radius: 12px;
+}
+
+.doc {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin:0 80px;
+    height: 450px;
+    text-align: center; 
+   /* background-image: url(../grafika/tlo.png);*/
+    
+   
+   
+   
+
+}
+
+ul.dokumenty_2{
+
+    margin: 10px 20px;
+    list-style-type: disc;
+   
+   
+
+}
+
+
+ul.dokumenty_2 li{
+    padding:10px 0 10px;
+  /*  background-color:  rgba(98, 202, 202, 0.4);*/
+    width: 100%;
+    border-radius: 12px;
+    margin:15px 0;
+    max-width: 10000px;
+    width: 600px;
+
+  
+    
+    
+
+}
+
+ul.dokumenty_2 li a{
+
+    font-weight: bolder;
+   color:rgb(227, 64, 64);
+    opacity:1;
+    
+    line-height: 15px;
+    font-size: 18px;
+    list-style-type: disc;
+   
+    
+    
+   
+}
+
+
+#og{
+    background-color: #62CACA;
+    border-radius: 10px;
+    margin:0 0px;
+    margin-bottom: 70px;
+    padding: 6px 0;
+    font-size: 32px;
+}
+
+
+#fplace{
+    margin-bottom: 60px;
+    font-size:28px
+}
+
+
+#fplaceteam{
+    margin-bottom: 70px;
+    font-size: 25px ;
+    color: rgb(227, 64, 64);
+
+}

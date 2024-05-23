@@ -1,0 +1,246 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+   
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin-top: 210px;
+    
+    width: 100vw;
+   /* background-image: url(logo_opis.png);*/
+   font-family: 'Titillium Web', sans-serif;
+}
+
+
+/*                 kolaż            */
+
+.collage{
+    display: flex;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    transition: height 0.2s ;
+
+}
+div.collage{
+   
+    /*kolaż*/
+    background-image: url('../grafika/naglowek2.png');
+    background-size: auto 280px;
+    background-position: center ;
+
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    z-index: 100;
+    
+}
+
+
+
+
+/*                                   MENU 1                                      */
+
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nawigacja{
+
+    width: 100%;
+    padding: 0;
+    z-index: 99;
+
+}
+
+
+.menu{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: #efeded  ;
+}
+
+
+/* "kafelki" */
+
+
+.sekcje{
+    display: flex;
+    flex:1;
+
+    height: 100%;
+
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+
+}
+
+.sekcje li{
+
+    flex:1;
+   
+    display:flex;
+    flex-direction: row;
+
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+
+    max-width: 500px;
+   
+}
+
+li{
+    flex:1;
+    list-style: none;
+    padding: auto;
+}
+
+.sekcje li a{
+
+    flex:1;
+    font-size:14px;
+    transition: font-size 0.8s; 
+}
+
+
+.sekcje a:hover{
+
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #fcfcfc;
+
+}
+
+
+
+.nawigacja a{
+
+    justify-content: center ;
+    text-align: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    color: #00788F;
+    
+}
+
+
+.sekcje li a{
+    display: block;
+
+    height: 100%;
+    padding: 13px 0;
+
+    font-weight: bold;
+    font-size:20px
+}
+
+
+
+
+
+.przycisk_menu {
+    display: none; /* Domyślnie ukryj przycisk */
+
+    text-align: center;
+    justify-content: center;
+
+    cursor: pointer; 
+
+    padding: 0.5rem 0;
+    
+
+}
+
+.przeswit{
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+}
+
+ul li.INFO
+{
+    display: none;
+}
+
+ul li.INFO a
+{
+    display: none;
+}
+
+
+/*                                 MENU 2                                     */
+
+
+.menu_rozwijane{
+
+    display:none;
+    position:absolute;
+    top: 100%; /* Ustawienie odległości od góry */
+    overflow: hidden;
+
+    height: 0;
+    width: 100%;
+    
+    align-items: center;
+    text-align: center;
+
+    margin:auto;
+
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+
+    background-color: #fcfcfc;
+   
+    z-index: 200000;
+}
+
+.menu_rozwijane li{   
+
+    display:flex;
+
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+
+    padding: 23px 0;
+    
+    text-decoration: none;
+    
+}
+
+.menu_rozwijane a{
+    font-size:23px;
+}
+
+
+.menu_rozwijane li:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+.menu_rozwijane.open{
+   
+    height: auto;
+}
+
+span{
+    font-size: 25px;
+}
+

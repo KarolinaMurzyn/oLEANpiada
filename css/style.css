@@ -1,0 +1,333 @@
+
+
+.srodek
+{
+    margin:40px 0;
+    display: flex;
+    min-height: fit-content;
+    
+}
+
+
+/*PODZIAŁ NA KOLUMNY STRONE*/
+
+article:nth-of-type(1)
+{
+    flex: 2;
+    flex-direction: column; /* Ustaw artykuł na układ kolumnowy */
+    background:  rgba(98, 202, 202, 0.65);
+    padding: 10px;
+   
+}
+article:nth-of-type(2)
+{
+    flex: 8;
+   background: white;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+   
+    margin: 10px;
+    min-height: fit-content;
+    flex: 1;
+    box-sizing: border-box; /* Dodaj tę linijkę */
+    background-color: #233549;
+    z-index: 0;
+    overflow: hidden; /* Zapobiega poziomemu przewijaniu dla artykułów */
+}
+
+
+/*KALENDARZ*/
+.calendar {
+    width: auto;
+    height: 285px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    
+   
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.monthYear {
+    text-align: center;
+    font-weight: 5rem;
+    width: 150px;
+    color: white;
+}
+
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.day
+{
+text-align: center;
+padding: 5px;
+color: #533e79;
+font-weight: 3.5rem;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    color: white;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 4.5rem;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    transition: 0.2s;
+}
+
+.date:hover, .date.active {
+    background:rgb(227, 64, 64);
+    color: #fff;
+    width: 25px; 
+    height: 25px; 
+}
+
+.date.inactive {
+color: black;
+}
+
+.date.inactive:hover {
+    color: #fff;
+}
+.calendar .highlight {
+    background-color: #00788F; 
+    color: black; 
+    width: 25px; 
+    height: 25px;
+
+
+}
+
+
+
+
+h3, .dokumentacja h3{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.najwazniejsze_daty {
+    display: row;
+    justify-content: left;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.daty li, .dokumentacja  li{
+    justify-content: left;
+    margin-left: 10px;
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
+
+span.highlighted_date{
+    color: #00788F;
+    font-size: 17px;
+    font-weight: bolder;
+    
+}
+.dokumentacja {
+    display: row;
+    justify-content: left;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.dokumenty li a{
+   
+    color: black;
+    font-size: 17px;
+    
+}
+
+
+ /* RESPONSYWNOSC */
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .srodek { 
+        flex-direction: column;
+        align-items: center;
+      
+}
+.dokumentacja {
+    display: none;
+}
+
+article:nth-of-type(1) {
+    order: 1;
+}
+article:nth-of-type(2) {
+    order: 0; 
+}
+}
+
+@media (min-width: 401px) and (max-width: 650px) {
+    .srodek { 
+        flex-direction: column;
+        align-items: center;
+    }
+    .dokumentacja {
+        display: none;
+    }
+   
+    article:nth-of-type(1) {
+        order: 1;
+    }
+    article:nth-of-type(2) {
+        order: 0; 
+}
+}
+
+@media (min-width: 651px) and (max-width: 980px) {
+    .srodek { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dokumentacja {
+        display: none;
+    }
+
+    article:nth-of-type(1) {
+        order: 1;
+    }
+    article:nth-of-type(2) {
+        order: 0; 
+}
+.kontyner {
+    display: flex;
+    flex-direction: row; 
+}
+.najwazniejsze_daty {
+    padding-left: 15%; /* Zmniejszony padding-left */
+    margin-right: 5%; /* Zmniejszony margin-right */
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    margin-left: 5%; /* Zmniejszony margin-left */
+    margin-top: 20px;
+   height: 250px;
+}
+}
+
+@media (min-width:981px) and ( max-width: 1250px){
+    .calendar {
+        padding: 5px; 
+        height: 240px;
+    }
+
+    .monthYear {
+        font-size: 1em; 
+    }
+
+    .day {
+        font-size: 0.9em; 
+    }
+
+    .date {
+        font-size: 0.9em; 
+        width: 20px; 
+        height: 20px; 
+    }
+
+    .highlight {
+        font-size: 1em; 
+}
+.date:hover, 
+    .date.active {
+        width: 20px; 
+        height: 20px; 
+    }
+    .calendar .highlight {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/**************************************************************/
+/*                  logo sknz/wydział                         */
+/**************************************************************/
+
+.agh_logo,
+.faculty_logo,
+.sknz_logo,
+.glowny_partner,
+.partner{
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+}
+
+img#agh_logo,
+img#faculty_logo,
+img#sknz_logo{
+    margin-top: 15px;
+    padding: 10px;
+    width: 40%;
+    height: auto;
+}
+
+
+img#glowny_partner,
+img#partner
+{
+    margin-top: 15px;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+}
+
+img#partner
+{
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}

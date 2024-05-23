@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="css/naglowek.css"> 
+        <link rel="stylesheet" type="text/css" href="css/responsywnosc.css"> 
+        <link rel="stylesheet" type="text/css" href="css/prawa_strona.css"> 
+        <link rel="stylesheet" type="text/css" href="css/stopka.css"> 
+       
+        <script src="js/main.js" defer></script>
+        <script src="js/rozwijane_menu.js" ></script>
+        <script src="js/przesuniecie_do_sekcji.js" ></script>
+
+         <!--STZAŁKI KALENDARZ-->
+        <script src="https://kit.fontawesome.com/739b0b141c.js" crossorigin="anonymous"></script> 
+
+        <link rel="icon" type="image/png" href="grafika/logo.jpg">
+        <meta property="og:image" content="grafika/logo.jpg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <meta name="description" content="VI edycja oLEANpiady">
+       
+        <title> oLEANpiada</title>
+       
+    </head>
+    <body>
+
+
+        <header>
+           
+
+            <div class="collage">
+
+                
+            </div>
+        
+            <div class="nawigacja" >
+
+                <div class="menu">
+
+                
+                    <ul class="sekcje">
+                        
+                        <li> <a   onclick="goToSection('oleanpiada')" >oLEANpiada</a> </li>
+
+                        <li> <a   href="test/test_probny.html">TEST</a> </li>
+                       
+                        <li> <a   onclick="goToSection('informacje')">INFORMACJE</a> </li>
+                        
+                        <li> <a  onclick="goToSection('doc')" >DOKUMENTY</a> </li>
+
+                        <li class="INFO"> <a class="INFO"  onclick="goToSection('kalendarium')" >KALENDARIUM</a> </li>
+
+                        <li> <a  onclick="goToSection('footer')" >KONTAKT</a> </li>
+                        
+                        
+                    </ul>   
+
+                    <div class="przycisk_menu" onclick="Rozwin()">
+                        <span>☰</span>
+                    </div>
+
+                </div> 
+
+                <div class="przeswit"></div>
+
+                <div class="menu_rozwijane">
+
+                    <li> <a   onclick="goToSection('oleanpiada')" >oLEANpiada</a> </li>
+
+                    <li> <a   href="test/test_probny.html">TEST</a> </li>
+                   
+                    <li> <a   onclick="goToSection('informacje')">INFORMACJE</a> </li>
+                    
+                    <li> <a  onclick="goToSection('doc')" >DOKUMENTY</a> </li>
+
+                    <li class="INFO"> <a class="INFO"  onclick="goToSection('kalendarium')" >KALENDARIUM</a> </li>
+
+                    <li> <a  onclick="goToSection('footer')" >KONTAKT</a> </li>
+
+                </div>
+
+
+            </div>
+
+           
+        </header>
+
+        
+
+        <div class="srodek">
+
+            
+            <article>
+                <h2 id="kalendarium" style="font-size: 17px;font-weight: bold; margin: 40px 0 40px;">
+                    KALENDARIUM
+                    <br>
+                </h2>
+                <!-- KALENDARZ -->
+                <div class="kontyner">
+
+                    
+                    <div class="calendar">
+                        
+                        <div class="header">
+                             <button id="prevBtn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                             <div class="monthYear" id="monthYear"></div>
+                            <button id="nextBtn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="days">
+                            <div class="day">pn</div>
+                            <div class="day">wt</div>
+                            <div class="day">śr</div>
+                            <div class="day">cz</div>
+                            <div class="day">pt</div>
+                            <div class="day">sb</div>
+                            <div class="day">nd</div>
+                        </div>
+
+                         <div class="dates" id="dates"></div>
+                    </div>
+
+                                
+                            
+                    
+                    <div class="najwazniejsze_daty">
+                            
+                        <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Harmonogram oLEANpiady</h3>
+
+                        <ul class="daty">
+                            <li>Rekrutacja elektroniczna <br> 4.03.2024 – 02.04.2024</li>
+                            <li>Termin przesyłania zadania kwalifikacyjnego <br> 02.04.2024</li>
+                            <li>Ogłoszenie zespołów zakwalifikowanych do finału oLEANpiady <br> 3.04.2024</li>
+                            <li>Centralny finał oLEANpiady w AGH <br> 22.04.2024 </br></li>
+                                
+                                
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="dokumentacja">
+
+                    <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Dokumenty </h3>
+
+                     <ul class="dokumenty">
+                        <li><a href="dokumenty/Oferta_oLEANpiada_.pdf" > Oferta dla szkół</a></li>
+ 			            <li><a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" >Regulamin</a></li>	
+                        <li><a href="dokumenty/Kompendium-glowne.pdf" >Kompendium wiedzy</a></li>	
+                        <li><a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" >Harmonogram finału - 22.04</a></li>	
+                        
+                    </ul>
+                </div>
+                <div class="loga">
+
+                    <div class="loga_agh">
+                        <div class="sknz_logo">
+
+                            <a href="https://skn.agh.edu.pl/kolo/studenckie-kolo-naukowe-zarzadzanie/">
+                                <img id="sknz_logo" src="grafika/sknz.png" alt="">
+                            </a>
+                            
+                        </div>
+
+                        <div class="faculty_logo">
+
+                            <a href="https://wilgz.agh.edu.pl/">
+                                <img id="faculty_logo" src="grafika/logo_wydzial.png" alt="">
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="agh_logo">
+
+                            <a href="https://www.agh.edu.pl/">
+                                <img id="agh_logo" src="grafika/LogoAGH_symbol_kolor_RGB-01.png" alt="">
+                            </a>
+                            <br><br><br><br>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="partners">
+
+                        <div class="glowny_partner">
+
+                                                
+
+                            <a href="https://www.qms-solutions.pl/">
+                                <img id="glowny_partner" src="grafika/sponsor_logo.png" alt="">
+                            </a>
+
+                            <h3 > GŁÓWNY PARTNER WYDARZENIA</h3>
+
+                            <br><br><br><br>
+                            
+                        </div>
+
+
+
+                        <div class="partner">
+
+                            <a href="https://leanpartner.pl/">
+                                <img id="partner" src="grafika/LEANPARTNER.png" alt="">
+                            </a>
+
+                            <h3 >  PARTNER WYDARZENIA</h3>
+
+                            <br><br><br><br>
+                            
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                    
+
+
+
+
+
+                </div>
+                    
+               
+            </article>
+
+            <article id="contents">
+
+
+                <div class="oleanpiada" id="oleanpiada">
+                    <h2 id="og">
+                        DZIĘKUJEMY ZA UDZIAŁ!!!
+
+                    </h2>
+                    
+                    <h3 id="fplace">ZWYCIĘSCY VI EDYCJI KONKURSU</h3>
+                    <h3 id="fplaceteam"> zespół Mopliki z Zespołu Szkół Elektronicznych i Informatycznych w Sosnowcu</h3>
+
+
+                    <br>
+                    <p id="final"><b>Drużyny zakwalifikowane do etapu finałowego </b></p>
+                    <br><br>
+
+                    <p class="final">
+                        Mopliki - Zespół Szkół Elektronicznych i Informatycznych w Sosnowcu
+                    </p>
+                    <p class="final">
+                        Open way - I Liceum Ogólnokształcące im. Bartłomieja Nowodworskiego w Krakowie 
+                    </p>
+                    <p class="final">
+                        Ziomki Poziomki - TEB Liceum i Technikum Gliwice 
+                    </p>
+                    <p class="final"> 
+                        Imigranci - XIV Liceum Ogólnokształcące im. Mikołaja Kopernika w Krakowie
+                    </p>
+
+
+                    <br><br><br><br><br><br>
+                    
+                
+
+                    <p>
+                       <b>Oleanpiada</b> jest konkursem dla uczniów liceów i&nbsp;techników z&nbsp;całej Polski, który obejmuje
+                        tematykę Lean Management (Szczupłego Zarządzania) oraz Problem Solving (Rozwiązywania
+                        Problemów).<br> W tym roku,<b> 22 kwietnia</b>, odbędzie się VI edycja konkursu, przynosząca nową
+                        okazję do pogłębienia wiedzy, kompetencji, jak i&nbsp;doświadczenia!
+                        Poprzednie edycje „oLEANpiady” cieszyły się bardzo pozytywnym odzewem zarówno ze
+                        strony licealistów, jak i&nbsp;uczniów techników. <br><br>
+                        We wszystkich edycjach wzięło udział niemalże 200 osób. Liczymy, że tegoroczna edycja
+                        będzie cieszyła się równie dużym zainteresowaniem. Uczestnicy będą mieli niebywałą okazję
+                        poznać narzędzia, które stosuje się na co dzień w&nbsp;wielkich i&nbsp;znanych przedsiębiorstwach,
+                        doświadczyć symulacji procesu produkcyjnego, a także wdrożenia metod organizujących ich
+                        miejsce pracy. <br> <br> <br>
+                         
+                    </p>
+
+                    <p style="text-align: center; font-size: 22px;">
+                        <b>Zapraszamy do udziału w tegorocznej edycji konkursu! </b>
+                    </p>
+
+                    <br>
+                    <br>
+
+
+                    
+                </div>
+
+                <div class="informacje" id="informacje">
+                    <h2>
+                        INFORMACJE
+                    </h2>
+
+                    <br> <br>
+
+
+                    <div class="when">
+
+                        <div class="when_graphic">
+
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+
+                            <p>KIEDY?</p>
+                            
+                        </div>
+                        
+
+                        <p class="text">
+
+                             <b>22 kwietnia 2024 roku</b>
+
+                        </p>
+
+
+                    </div>
+
+                    <br>
+
+                    <div class="where">
+                        
+                        <div class="where_graphic">
+
+                            <span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </span>
+
+                            <p>GDZIE?</p>
+                                                
+                        </div>
+                        
+
+                        <p class="text">
+
+                           <b> Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</b>
+
+                        </p>
+
+
+                    </div>
+
+                    <br>
+
+
+                    <div class="who">
+
+                        <div class="who_graphic">
+                            <span><i class="fa fa-users" aria-hidden="true"></i>
+                            </span>
+
+                            <p>KTO?</p>
+                            
+                        </div>
+                        
+
+                        <p class="text">
+
+                            Zespół stanowi <b>5 uczestników</b> z jednej szkoły, przy dowolności doboru osób z różnych klas.
+
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="doc" id="doc">
+
+                    <h2>
+                        DOKUMENTY
+                    </h2>
+                    <br>
+
+                    <ul class="dokumenty_2">
+                        <li><a href="dokumenty/Oferta_oLEANpiada_.pdf" > Oferta dla szkół</a></li>
+ 			            <li><a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" >Regulamin</a></li>	
+                        <li><a href="dokumenty/Kompendium-glowne.pdf" >Kompendium wiedzy</a></li>	
+                        <li><a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" >Harmonogram finału - 22.04</a></li>	
+                       
+                    </ul>
+
+
+
+
+                </div>
+
+
+
+
+            </article>
+
+
+           
+                             
+
+        </div>
+
+        <footer id="footer">
+            
+
+            <div class="contact-info">
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p style="font-weight: bold;">KOORDYNATOR KONKURSU</p>
+                    <br>
+                </div>
+
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p>inż. Szymon Ziaja</p>
+                    <p>e-mail: oleanpiada.agh@gmail.com </p>
+                </div>
+
+                
+            </div>
+
+
+            <div class="contact-info">
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p style="font-weight: bold;text-transform: uppercase;">Prezes SKN Zarządzanie</p>
+                    <br>
+                </div>
+
+        
+                <div class="contact-item">
+                    <i></i>
+                    <p>inż. Karolina Sapko</p>
+                    <p>e-mail: lsapko@student.agh.edu.pl</p>
+                </div>
+
+                
+            </div>
+
+            <div class="social_media">
+                <p>Obserwuj nas</p>
+                <a href="https://www.instagram.com/sknz.agh?igsh=ZDlwZDlnaWVibWVh" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/SKNZ.AGH?locale=pl_PL" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/events/2672219489598701?locale=pl_PL" target="_blank"><i class="fa fa-calendar-o" aria-hidden="true"></i></a>
+                    
+            </div>
+
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2561.255825779431!2d19.922701289742953!3d50.06277042801862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165ba756b59b21%3A0xb20c8dba21b317d1!2sAkademia%20G%C3%B3rniczo-Hutnicza%20im.%20Stanis%C5%82awa%20Staszica%20w%20Krakowie!5e0!3m2!1spl!2spl!4v1709121972316!5m2!1spl!2spl"  height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+ 	<div class="grant">
+
+	<p> 
+		oLEANpiada 2024 jest interdyscyplinarnym konkursem, organizowanym przez Studenckie Koło Naukowe Zarządzanie w ramach realizacji Grantu Rektora AGH - AGH LeanLine 4.0
+
+	</p>
+        
+                
+
+                
+            </div>
+        </footer>
+
+        </body>
+        </html>

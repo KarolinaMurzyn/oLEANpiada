@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quiz-form{
+
+    display: flex;
+    flex-direction: column;
+    
+
+    text-align: justify;
+    
+ 
+
+
+}
+#quiz-container {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.question {
+    margin-bottom: 50px;
+    
+}
+.question label {
+    display: inline-block;
+    font-weight: bold;
+   
+}
+
+.question_label{
+
+    margin-bottom: 20px;
+}
+.choices {
+    display: flex;
+    flex-direction: column;
+  
+
+
+}
+
+    
+
+.wrap label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.choices .wrap label {
+    display: inline-block;
+    vertical-align: middle;
+}
+.choices input[type="radio"] {
+    margin-right: 15px; 
+}
+
+.choices label {
+    margin-right: 40px; 
+}
+
+.choices label :nth-child(3) {
+    margin-right: 0; 
+}
+
+
+
+.answer-panel {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#submit-btn,
+#restart-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#submit-btn{
+    margin-right: 20px;
+    
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45%;
+}
+
+#result{
+
+    margin-top: 20px;
+
+
+}
+
+
+
+
+
+/*** Responsywność ****/
+@media screen and (min-width:300px) and (max-width:400px){
+
+    #quiz-container {
+        width: 80%;
+        
+    }
+
+    .question label{
+        font-size: 12px;
+
+    }
+    .choices label{
+
+        font-size: 12px;
+    }
+
+    .choices label {
+        margin-right: 20px; 
+    }
+
+    #submit-btn,
+    #restart-btn {
+
+    margin-top: 20px;
+    padding: 10px 10px;
+    
+    }
+
+    
+
+}
+
+
+
+@media screen and (min-width:400px) and (max-width:650px){
+
+    #quiz-container {
+        width: 80%;
+        
+    }
+
+    .question label{
+        font-size: 14px;
+
+    }
+    .choices label{
+
+        font-size: 12px;
+    }
+
+}
