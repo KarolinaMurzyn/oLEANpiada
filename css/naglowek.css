@@ -8,7 +8,7 @@
 }
 
 body{
-    margin-top: 210px;
+  /*  margin-top: 210px;*/
     
     width: 100vw;
    /* background-image: url(logo_opis.png);*/
@@ -21,7 +21,7 @@ body{
 .collage{
     display: flex;
     width: 100%;
-    height: 130px;
+    height: 100vh;
     position: relative;
     transition: height 0.2s ;
 
@@ -29,8 +29,9 @@ body{
 div.collage{
    
     /*kolaż*/
-    background-image: url('../grafika/naglowek2.png');
-    background-size: auto 280px;
+    /*background-image: url('../grafika/naglowek2.png');*/
+    background-size: 3500px auto ;
+    background-color: white;
     background-position: center ;
 
     
@@ -40,6 +41,10 @@ div.collage{
 
     z-index: 100;
     
+}
+
+.collage img{
+    width: 40%;
 }
 
 
@@ -52,14 +57,14 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 101;
 }
 
 .nawigacja{
 
     width: 100%;
     padding: 0;
-    z-index: 99;
+    z-index: 101;
 
 }
 
@@ -70,16 +75,27 @@ header{
     align-items: center;
     text-align: center;
     display: flex;
-    background-color: #efeded  ;
+    background-color: white  ;
 }
 
 
 /* "kafelki" */
 
+.pierwszy-kafelek{
 
+    margin-right: auto;
+    margin-left: 4vw;
+   /* visibility: hidden;*/
+    
+}
+img.pierwszy-kafelek{
+    height:100%;
+    max-height: 80px;
+    width: auto;
+}
 .sekcje{
     display: flex;
-    flex:1;
+    
 
     height: 100%;
 
@@ -105,23 +121,19 @@ header{
 }
 
 li{
-    flex:1;
+   /* flex:1;*/
     list-style: none;
     padding: auto;
 }
 
-.sekcje li a{
 
-    flex:1;
-    font-size:14px;
-    transition: font-size 0.8s; 
-}
 
 
 .sekcje a:hover{
 
-    background-color: rgba(0, 0, 0, 0.35);
-    color: #fcfcfc;
+   /* background-color: rgba(0, 0, 0, 0.35);*/
+    color: #000000;
+    transition: color 1.5s;
 
 }
 
@@ -144,10 +156,11 @@ li{
     display: block;
 
     height: 100%;
-    padding: 13px 0;
+   padding: 13px 30px;
 
     font-weight: bold;
-    font-size:20px
+    font-size:20px;
+    transition: font-size 0.8s; 
 }
 
 
@@ -230,7 +243,14 @@ ul li.INFO a
 
 
 .menu_rozwijane li:hover{
-    background-color: rgba(0, 0, 0, 0.4);
+   /* background-color: rgba(0, 0, 0, 0.4);*/
+}
+
+.menu_rozwijane li a:hover{
+    color:black;
+    transition: color 1.5s;
+
+
 }
 
 
