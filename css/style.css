@@ -29,9 +29,7 @@ article {
     overflow: hidden; /* Zapobiega poziomemu przewijaniu dla artykułów */
 }
 
-article#art1{
 
-}
 
 
 /*KALENDARZ*/
@@ -44,6 +42,7 @@ article#art1{
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
     margin-left:10vw;
+    background-color: #e8edf3;
     
    
 }
@@ -140,6 +139,7 @@ color: black;
 .kontyner {
     display: flex;
     flex-direction: column; 
+    height: fit-content;
 }
 
 .wydarzenia{
@@ -160,10 +160,10 @@ h3, .dokumentacja h3{
 }
 
 .najwazniejsze_daty {
-    display: row;
+   
     justify-content: left;
     text-align: left;
-    font-size: 15px;
+    font-size: 25px;
     margin-left: 10px;
    
 }
@@ -217,18 +217,19 @@ span.highlighted_date{
     display: flex;
     border-radius: 8px;
     margin: 32px 0;
-    height: 120px;
     background-color: red;
+    min-height: fit-content;
+    
 }
 
 .event .event_left {
-    background: #222;
+    background: #00BFB2;
     min-width: 82px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #eee;
-    padding: 6px 0px;
+    color: black;
+    padding: 16px 0px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px 0 0 8px;
@@ -250,14 +251,16 @@ span.highlighted_date{
     flex-direction: column;
     justify-content: center;
     padding: 0 12px;
-    background-color: #eee;
+    background-color:  #e8edf3;
+    padding: 16px 0 16px 20px;
+   
     
 }
 
 
 
 .event .event_right h4.event_title {
-    font-size: 18px;
+    font-size: 26px;
     margin: 14px 0 10px 0;
     color:rgb(227, 64, 64);
     text-transform: uppercase;
@@ -274,7 +277,7 @@ span.highlighted_date{
     padding: 8px;
     border-radius: 16px;
     margin:24px 0;
-    font-size: 14px
+    font-size: 10px
 }
 
 
