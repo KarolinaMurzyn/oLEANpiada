@@ -3,46 +3,40 @@ h2{
     margin-bottom:12px ;
     text-align: center; 
 }
-.oleanpiada{
-    margin-top:20px ;
-    text-align:justify;
-    padding: 0 150px 35px;
-    
+
+div.oleanpiada {
+    margin-top: 20px;
+    padding: 0 150px;
+    background-color: #838383;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
+    text-align: justify;
 }
 
-.oleanpiada h3{
-
-    font-size: 22px;
-    text-align: center;
+div.oleanpiada p {
+    font-size: 1.7rem;
+    padding: 0 15vw;
+    margin: 0; /* Usunięcie marginesu domyślnego */
 }
 
-h3#final{
 
-   margin-top: 20px;
-
-
-
-}
-
-h3.final{
-    font-size: 18px;;
-    
-}
 
 
 #contents{
 
     width: 100%;
 }
-.oleanpiada p{
-    font-size: 20px;
 
-    line-height: 25px;
-}
 .informacje{
-    padding:30px 20px;
-    
+    height: 100vh;
+    background-color: white;
+
 }
+
 
 .when,
 .where,
@@ -90,16 +84,11 @@ h3.final{
     padding:0 15px ;
     font-size: 50px;
 
+    
+
 }
 
-.when_graphic p,
-.where_graphic p,
-.who_graphic p{
 
-    font-weight: bold;
-    font-size: 30px;
-   
-}
 
 p.text{
 
@@ -108,15 +97,28 @@ p.text{
     padding:30px 40px;
     
 
+    font-weight: bold;
     font-size: 25px;
     align-items: center;
     text-align: center;    
     justify-content: center;
 
-    background-color: #62CACA;
+    background-color: #00BFB2;
     border-radius: 20px;
 }
 
+.text:hover {
+    transform: scale(1.05);
+}
+
+.where_graphic p,
+.who_graphic p,
+.when_graphic p{
+
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
 .doc {
 
     display: flex;
@@ -126,30 +128,35 @@ p.text{
     padding: 20px 0;
     margin:0 80px;
     height: 450px;
-    text-align: center; 
-   /* background-image: url(../grafika/tlo.png);*/
+
+    min-height: fit-content;
+
+   
+
     
-   
-   
-   
+
+    
+ 
 
 }
 
 ul.dokumenty_2 {
+    display: flex;
+    flex-direction: column;
     margin: 10px 20px;
-    list-style-type: none; /* Usuń punktor (dysk) z listy, można go dodać na linkach */
-    padding: 0; /* Upewnij się, że lista nie ma domyślnego paddingu */
-    display: flex; /* Ustaw elementy w linii */
-    flex-wrap: wrap; /* Jeśli elementy nie mieszczą się w jednej linii, zostaną zawinięte */
+    list-style-type: none;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap; 
 }
 
 ul.dokumenty_2 li {
     padding: 10px 20px;
     border-radius: 12px;
     margin: 15px;
-    width: auto; /* Ustaw szerokość automatycznie */
-    max-width: none; /* Usuń maksymalną szerokość */
-    display: inline-block; /* Pozwala wyświetlać elementy obok siebie */
+    width: auto; 
+    max-width: none; 
+    display: inline-block; 
 }
 
 ul.dokumenty_2 li a {
@@ -157,14 +164,18 @@ ul.dokumenty_2 li a {
     color: rgb(227, 64, 64);
     opacity: 1;
     line-height: 15px;
-    font-size: 18px;
+    font-size: 2.4rem;
     text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+ul.dokumenty_2 li span{
+    font-size: 40px;
 }
 
 
 
 #og{
-    background-color: #62CACA;
+    background-color:#00BFB2;
     border-radius: 10px;
     margin:0 0px;
     margin-bottom: 70px;

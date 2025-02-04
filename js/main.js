@@ -8,8 +8,8 @@ let currentDate = new Date();
 // Przykładowa lista zaznaczonych dat w formacie 'RRRR-MM-DD'
 
 
-const startDate = new Date('2024-03-4');
-const endDate = new Date('2024-04-2');
+const startDate = new Date('2025-03-1');
+const endDate = new Date('2025-04-5');
 
 const highlightedDates = [];
 
@@ -18,7 +18,7 @@ for (let date = startDate; date <= endDate; date.setDate(date.getDate() + 1)) {
     highlightedDates.push(formattedDate);
 }
 
-highlightedDates.push('2024-04-02', '2024-04-21');
+highlightedDates.push('2025-04-28', '2025-04-29');
 // daje jeden dzien do przodu
 const updateCalendar = () => {
     const currentYear = currentDate.getFullYear();

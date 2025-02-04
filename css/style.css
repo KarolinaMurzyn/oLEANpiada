@@ -5,6 +5,7 @@
     margin:40px 0;
     display: flex;
     min-height: fit-content;
+    flex-direction: column;
 
 
     
@@ -14,19 +15,6 @@
 
 /*PODZIAŁ NA KOLUMNY STRONE*/
 
-article:nth-of-type(1)
-{
-    flex: 2;
-    flex-direction: column; /* Ustaw artykuł na układ kolumnowy */
-    background:  rgba(98, 202, 202, 0.65);
-    padding: 10px;
-   
-}
-article:nth-of-type(2)
-{
-    flex: 8;
-   background: white;
-}
 
 article {
     display: flex;
@@ -36,9 +24,13 @@ article {
     min-height: fit-content;
     flex: 1;
     box-sizing: border-box; /* Dodaj tę linijkę */
-    background-color: #233549;
+    background-color: #f8fafc;
     z-index: 0;
     overflow: hidden; /* Zapobiega poziomemu przewijaniu dla artykułów */
+}
+
+article#art1{
+
 }
 
 
@@ -51,7 +43,7 @@ article {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
-    margin-left:5vw;
+    margin-left:10vw;
     
    
 }
@@ -68,7 +60,8 @@ article {
     text-align: center;
     font-size: 2rem;
     width: 150px;
-    color: white;
+    color: #00BFB2;
+    font-weight: 800;
 }
 
 .header button{
@@ -94,14 +87,15 @@ article {
 text-align: center;
 padding: 5px;
 color: #533e79;
-font-weight: 3.5rem;
+font-weight:600;
 }
 
 .dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    color: white;
+    color: #0b958c;
+    font-weight: bolder;
 }
 
 .date {
@@ -133,10 +127,10 @@ color: black;
     color: #fff;
 }
 .calendar .highlight {
-    background-color: #00788F; 
+    background-color: #efd075; 
     color: black; 
-    width: 25px; 
-    height: 25px;
+    width: 45px; 
+    height: 45px;
 
 
 }
@@ -145,8 +139,15 @@ color: black;
 
 .kontyner {
     display: flex;
+    flex-direction: column; 
+}
+
+.wydarzenia{
+    display: flex;
     flex-direction: row; 
 }
+
+
 
 
 h3, .dokumentacja h3{
@@ -200,6 +201,9 @@ span.highlighted_date{
     min-width: 800px;
     max-width: 800px;
     margin :0 auto;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .najwazniejsze_daty h3.year {
@@ -214,6 +218,7 @@ span.highlighted_date{
     border-radius: 8px;
     margin: 32px 0;
     height: 120px;
+    background-color: red;
 }
 
 .event .event_left {
@@ -280,28 +285,8 @@ div.evening_timing img{
     padding-right: 8px;
 }
 
-@media (max-width:600px){
-    .event{
-        flex-direction: column;
-    }
-
-    .event .event_left{
-        padding:0;
-        border-radius: 8px 8px 0 0;
-    }
-
-    .event .event_left .date,
-    .event .event_left .month {
-        display:inline-block;
-        font-size: 24px;
-    }
-
-    .event .event_left .event_date{
-        padding:10px 0;
-    }
 
 
-}
 
 
 /* dokumenty */
@@ -338,17 +323,93 @@ ul.dokumenty_2 li img {
         flex-direction: column;
         align-items: center;
       
-}
-.dokumentacja {
-    display: none;
-}
+    }
+    .dokumentacja {
+        display: none;
+    }
 
-article:nth-of-type(1) {
-    order: 1;
-}
-article:nth-of-type(2) {
-    order: 0; 
-}
+    .calendar{
+        margin-bottom: 250px;
+    }
+
+    .kontyner{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Wyśrodkowanie w poziomie */
+    }
+
+
+    div.event{
+        max-width: 90vw;
+        justify-content: center;
+        margin: 0 auto; /* Wyśrodkowanie w poziomie */
+
+    }
+
+
+
+    .event .event_left {
+        background: #222;
+        /*min-width: 75px;*/
+        
+        padding: 6px 0px;
+       
+        border-radius: 8px 0 0 8px;
+    }
+    
+    .event .event_left .date {
+        font-size: 56px;
+    }
+    
+    .event .event_left .month {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .event .event_right{
+    
+        display:flex;
+        width: 70px;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12px;
+        background-color: #eee
+        
+    }
+    
+    
+    
+    .event .event_right h4.event_title {
+        font-size: 18px;
+        margin: 14px 0 10px 0;
+        color:rgb(227, 64, 64);
+        text-transform: uppercase;
+        text-align: left; /* Wymusza wyrównanie tekstu do lewej */
+    }
+    
+    
+    .event .event_right .event_timing{
+        
+        display:flex;
+        
+        width: 100px;
+        padding: 8px;
+        border-radius: 16px;
+        margin:24px 0;
+        font-size: 14px
+    }
+    
+    
+    div.evening_timing img{
+        margin-top:10px;
+    
+        height:25px !important;
+        padding-right: 8px;
+    }
+    
+
 }
 
 @media (min-width: 401px) and (max-width: 650px) {
@@ -441,75 +502,9 @@ article:nth-of-type(2) {
 article#art1{
 
     width:100%;
+   
+    padding-top: 200px;
 }
 
 
-/* coś dodane */
 
-
-@media (min-width: 981px) {
-    .srodek { 
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Zmiana kolejności kolumny po lewej */
-    article:nth-of-type(1) {
-        order: 1; /* Ustawia lewą kolumnę na dół */
-    }
-
-    article:nth-of-type(2) {
-        order: 0; /* Ustawia główną kolumnę na górze */
-    }
-}
-
-/**************************************************************/
-/*                  logo sknz/wydział                         */
-/**************************************************************/
-
-
-
-.loga{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.agh_logo,
-.faculty_logo,
-.sknz_logo,
-.glowny_partner,
-.partner{
-    align-items: center;
-       
-    justify-content: center;
-}
-
-img#agh_logo,
-img#faculty_logo,
-img#sknz_logo{
-    margin-top: 15px;
-    padding: 10px;
-    width: 10%;
-    height: auto;
-}
-
-
-img#glowny_partner,
-img#partner
-{
-    margin-top: 15px;
-    padding: 10px;
-    width: 70%;
-    height: auto;
-}
-
-img#partner
-{
-    margin-top: 15px;
-    padding: 10px;
-    width: 100%;
-    height: auto;
-}

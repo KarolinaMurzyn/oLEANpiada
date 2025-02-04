@@ -8,44 +8,57 @@
 }
 
 body{
-  /*  margin-top: 210px;*/
-    
+  
     width: 100vw;
-   /* background-image: url(logo_opis.png);*/
    font-family: 'Titillium Web', sans-serif;
 }
 
+/**********************************************************************************************/
+/*                                     logo pierwsza strona                                   */
+/**********************************************************************************************/
 
-/*                 kolaż            */
 
-.collage{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    transition: height 0.2s ;
-
-}
 div.collage{
    
-    /*kolaż*/
-    /*background-image: url('../grafika/naglowek2.png');*/
-    background-size: 3500px auto ;
-    background-color: white;
-    background-position: center ;
-
-    
     display: flex; 
+    align-items: center; 
+   
+}
+
+
+.collage {
+    z-index: 100;
+    height: 100vh;
+    background-image: url("../grafika/Przezroczyste_logo.png");
+    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
+    background-size: 40%; /* Dopasowuje obraz do dostępnej przestrzeni */
+    background-position: center 30%; /* Ustawia obraz na środku */
     justify-content: center; 
     align-items: center; 
-
-    z-index: 100;
-    
+    justify-content: center; 
+    align-items: center; 
 }
 
-.collage img{
-    width: 40%;
+.collage p {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px; /* Opcjonalne przesunięcie w dół */
+    animation: fadeIn 1.5s ease-in-out;
 }
+
+/* Animacja pojawienia się tekstu */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 
@@ -85,8 +98,16 @@ header{
 
     margin-right: auto;
     margin-left: 4vw;
-   /* visibility: hidden;*/
-    
+    visibility: hidden;
+   transition: visibility 0s, opacity 0.5s ease-in-out;
+   opacity: 0; /* Dodanie animacji zanikania */
+   cursor: pointer;
+}
+
+.pierwszy-kafelek.show {
+    visibility: visible;
+    opacity: 1; /* Widoczność z animacją */
+    transition: visibility 0s, opacity 0.5s ease-in-out;
 }
 img.pierwszy-kafelek{
     height:100%;

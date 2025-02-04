@@ -12,6 +12,7 @@
         <script src="js/main.js" defer></script>
         <script src="js/rozwijane_menu.js" ></script>
         <script src="js/przesuniecie_do_sekcji.js" ></script>
+        <script src="js/ikona.js" ></script>
 
          <!--STZAŁKI KALENDARZ-->
         <script src="https://kit.fontawesome.com/739b0b141c.js" crossorigin="anonymous"></script> 
@@ -58,9 +59,11 @@
                         
                         <li class="pierwszy-kafelek" > <a   onclick="goToSection('oleanpiada')" >HOME</a> </li>
 
+                        <li> <a  onclick="goToSection('oleanpiada')"  href="#">HOME</a> </li>
+
                         <li> <a   href="#">TEST</a> </li>
                         
-                        <li> <a   href="edycje.html">EDYCJE</a> </li>
+                        <!-- <li> <a   href="edycje.html">EDYCJE</a> </li> -->
                        
                         <li> <a   onclick="goToSection('informacje')">INFORMACJE</a> </li>
                         
@@ -103,9 +106,10 @@
            
         </header>
 
-        <div class="collage"> 
+        <div class="collage" id="collage"> 
 
-            <img src="grafika/Przezroczyste_logo.png">
+           <!-- <img src="grafika/Przezroczyste_logo.png"> -->
+            <p>Ucz się, rywalizuj, wygrywaj! <br> Lean Management w praktyce</p>
         </div>
 
         
@@ -113,360 +117,38 @@
         <div class="srodek">
 
             
-            <article id="art1">
-               <!-- <h2 id="kalendarium" style="font-size: 17px;font-weight: bold; margin: 40px 0 40px;">
-                    KALENDARIUM
-                    <br>
-                </h2>
-            -->
-                <!-- KALENDARZ -->
-                <div class="kontyner">
-
-                    
-                    <div class="calendar">
-                        
-                        <div class="header">
-                             <button id="prevBtn">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-                             <div class="monthYear" id="monthYear"></div>
-                            <button id="nextBtn">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                        </div>
-
-                        <div class="days">
-                            <div class="day">pn</div>
-                            <div class="day">wt</div>
-                            <div class="day">śr</div>
-                            <div class="day">cz</div>
-                            <div class="day">pt</div>
-                            <div class="day">sb</div>
-                            <div class="day">nd</div>
-                        </div>
-
-                         <div class="dates" id="dates"></div>
-                    </div>
-
-                                
-                            
-                    
-                    <div class="najwazniejsze_daty">
-                            
-                       <!-- <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Harmonogram oLEANpiady</h3> -->
-
-                        <ul class="daty">
-                            <!-- <li>Rekrutacja elektroniczna <br> 4.03.2024 – 02.04.2024</li> 
-                            <li>Termin przesyłania zadania kwalifikacyjnego <br> 02.04.2024</li>
-                            <li>Ogłoszenie zespołów zakwalifikowanych do finału oLEANpiady <br> 3.04.2024</li>
-                            <li>Centralny finał oLEANpiady w AGH <br> 22.04.2024 </br></li>
-
-                        -->
-
-                        <h3 class="rok"> 2025 </h3>
-
-                        <div class="event">
-
-                            <div class="event_left">
-
-                                <div class="event_date">
-
-                                    <div class="date2">4</div>
-                                    <div class="month">marzec</div>
-
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="event_right">
-
-                                <h4 class="event_title"> Rekrutacja elektroniczna </h4>
-
-                                <div class="event_description">
-                                    Nadsyłanie zgłoszeń rekrutacyjnych
-
-                                </div>
-
-                                <div class="evening_timing">
-                                    <img class="evening_timing_icon"src="grafika/zegar.png" alt="clock"> 10:00 am
-                                </div>
-
-                            
-                            
-                            </div>
-
-
-                            
-                            
-
-
-
-                        </div>
-
-                        <h3 class="rok"> 2024 7 </h3>
-
-                        <div class="event">
-
-                            <div class="event_left">
-
-                                <div class="event_date">
-
-                                    <div class="date2">6</div>
-                                    <div class="month">marzec</div>
-
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="event_right">
-
-                                <h4 class="event_title"> Rekrutacja elektroniczna </h4>
-
-                                <div class="event_description">
-                                    Nadsyłanie zgłoszeń rekrutacyjnych
-
-                                </div>
-
-                                <div class="evening_timing">
-                                    <img src="grafika/zegar.png" alt="clock"> 10:00 am
-                                </div>
-
-                            
-                            
-                            </div>
-
-
-                            
-                            
-
-
-
-                        </div>
-
-
-                        <div class="event">
-
-                            <div class="event_left">
-
-                                <div class="event_date">
-
-                                    <div class="date2">4</div>
-                                    <div class="month">marzec</div>
-
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="event_right">
-
-                                <h4 class="event_title"> Zadanie kwalifikacyjne </h4>
-
-                                <div class="event_description">
-                                    Termin przesyłania zadania kwalifikacyjnego
-
-                                </div>
-
-                                <div class="evening_timing">
-                                    <img src="grafika/zegar.png" alt="clock"> 10:00 am
-                                </div>
-
-                            
-                            
-                            </div>
-
-                        
-                                
-                                
-                        </ul>
-                    </div>
-
-                </div>
-
-               <!-- <div class="dokumentacja">
-
-                    <h3 style="font-size: 17px;font-weight: bold;text-align: center; margin: 40px 0 20px;"> Dokumenty </h3>
-
-                     <ul class="dokumenty">
-                        <li><a href="dokumenty/Oferta_oLEANpiada_.pdf" > Oferta dla szkół</a></li>
- 			            <li><a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" >Regulamin</a></li>	
-                        <li><a href="dokumenty/Kompendium-glowne.pdf" >Kompendium wiedzy</a></li>	
-                        <li><a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" >Harmonogram finału - 22.04</a></li>	
-                        
-                    </ul>
-                </div>
-
-                -->
-                <div class="loga">
-                    <!--
-
-                    <div class="loga_agh">
-                        <div class="sknz_logo">
-
-                            <a href="https://skn.agh.edu.pl/kolo/studenckie-kolo-naukowe-zarzadzanie/">
-                                <img id="sknz_logo" src="grafika/sknz.png" alt="">
-                            </a>
-                            
-                        </div>
-
-                        <div class="faculty_logo">
-
-                            <a href="https://wilgz.agh.edu.pl/">
-                                <img id="faculty_logo" src="grafika/logo_wydzial.png" alt="">
-                            </a>
-                            
-                        </div>
-
-
-                        <div class="agh_logo">
-
-                            <a href="https://www.agh.edu.pl/">
-                                <img id="agh_logo" src="grafika/LogoAGH_symbol_kolor_RGB-01.png" alt="">
-                            </a>
-                            <br><br><br><br>
-                            
-                        </div>
-
-                    </div>
-                        <!--
-                    <div class="partners">
-
-                        <div class="glowny_partner">
-
-                                                
-
-                            <a href="https://www.qms-solutions.pl/">
-                                <img id="glowny_partner" src="grafika/sponsor_logo.png" alt="">
-                            </a>
-
-                            <h3 > GŁÓWNY PARTNER WYDARZENIA</h3>
-
-                            <br><br><br><br>
-                            
-                        </div>
-
-
-
-                        <div class="partner">
-
-                            <a href="https://leanpartner.pl/">
-                                <img id="partner" src="grafika/LEANPARTNER.png" alt="">
-                            </a>
-
-                            <h3 >  PARTNER WYDARZENIA</h3>
-
-                            <br><br><br><br>
-                            
-
-
-
-                        </div>
-
-
-
-                    </div>
-                -->
-
-
-                <div class="doc" id="doc"></div>
-
-                   <!-- <h2>
-                        DOKUMENTY
-                    </h2>
-                    <br>
-
-                -->
-
-                    <ul class="dokumenty_2" style="margin-top:200px">
-                        <li>
-                            <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
-                            <a href="dokumenty/Oferta_oLEANpiada_.pdf" download>
-                                <img src="grafika/download.png" alt="Pobierz ofertę">
-                            </a>
-                            <a href="dokumenty/Oferta_oLEANpiada_.pdf" download> Oferta dla szkół</a>
-                        </li>
-                    
-                        <li>
-                            <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
-                            <a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" download>
-                                <img src="grafika/download.png" alt="Pobierz regulamin">
-                            </a>
-                            <a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" download> Regulamin</a>
-                        </li>
-                    
-                        <li>
-                            <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
-                            <a href="dokumenty/Kompendium-glowne.pdf" download>
-                                <img src="grafika/download.png" alt="Pobierz kompendium">
-                            </a>
-                            <a href="dokumenty/Kompendium-glowne.pdf" download> Kompendium wiedzy</a>
-                        </li>
-                    
-                        <li>
-                            <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
-                            <a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" download>
-                                <img src="grafika/download.png" alt="Pobierz harmonogram">
-                            </a>
-                            <a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" download> Harmonogram finału - 22.04</a>
-                        </li>
-                    </ul>
-                    
-
-
-
-                </div>
-
-
-                    
-
-
-
-
-
-        
-                    
-               
-            </article>
-
+           
             <article id="contents">
 
 
-                <div class="oleanpiada" id="oleanpiada" style="background-color: #838383; color: white; height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: justify;">
+                <div class="oleanpiada" id="oleanpiada" >
                     
-                    <!--<h2 id="og">
-                        DZIĘKUJEMY ZA UDZIAŁ!!!
-                    </h2>-->
-                
-                    <p style="padding: 0 15vw 80px;">
-                       <b>Oleanpiada</b> jest konkursem dla uczniów liceów i&nbsp;techników z&nbsp;całej Polski, który obejmuje
-                        tematykę Lean Management (Szczupłego Zarządzania) oraz Problem Solving (Rozwiązywania
-                        Problemów).<br> 
-                        Poprzednie edycje „oLEANpiady” cieszyły się bardzo pozytywnym odzewem zarówno ze
+                 
+                    <p>
+                        <b style="font-size: 2.3rem;">oLEANpiada</b> jest konkursem dla uczniów liceów i&nbsp;
+                        techników z&nbsp;całej Polski, który obejmuje tematykę <b>Lean&nbsp;Management </b>
+                        (Szczupłego Zarządzania) oraz <b>Problem Solving</b>  (Rozwiązywania Problemów).<br> 
+                        Poprzednie edycje oLEANpiady cieszyły się bardzo pozytywnym odzewem zarówno ze
                         strony licealistów, jak i&nbsp;uczniów techników. <br><br>
-                        We wszystkich edycjach wzięło udział niemalże 200 osób. Liczymy, że tegoroczna edycja
-                        będzie cieszyła się równie dużym zainteresowaniem. Uczestnicy będą mieli niebywałą okazję
-                        poznać narzędzia, które stosuje się na co dzień w&nbsp;wielkich i&nbsp;znanych przedsiębiorstwach,
-                        doświadczyć symulacji procesu produkcyjnego, a także wdrożenia metod organizujących ich
-                        miejsce pracy. <br> <br> <br>
+                        We wszystkich edycjach wzięło udział niemalże <b>200</b> osób.
+                        Liczymy, że tegoroczna edycja będzie cieszyła się równie
+                        dużym zainteresowaniem.
+                        Uczestnicy będą mieli niebywałą okazję poznać narzędzia,
+                        które stosuje się na co dzień w&nbsp;wielkich i&nbsp;znanych
+                        przedsiębiorstwach, doświadczyć symulacji procesu produkcyjnego,
+                        a także wdrożenia metod organizujących ich miejsce pracy.
+                        <br> <br> <br>
                     </p>
+                    
                 
-                    <p style="text-align: center; font-size: 22px;">
+                    <p style="text-align: center; font-size: 2rem;">
                         <b>Zapraszamy do udziału w tegorocznej edycji konkursu! </b>
                     </p>
                 
                 </div>
                 
-                <div class="informacje" id="informacje" style="height: 100vh;">
-                   <!-- <h2>
-                        INFORMACJE
-                    </h2>
-
-                -->
+                <div class="informacje" id="informacje" >
+                   
 
                     <br> <br>
 
@@ -485,7 +167,7 @@
 
                         <p class="text">
 
-                             <b>22 kwietnia 2024 roku</b>
+                             <b>wiosna 2025 roku</b>
 
                         </p>
 
@@ -547,6 +229,228 @@
             </article>
 
 
+
+
+
+            <article id="art1">
+                
+                <!-- KALENDARZ -->
+                <div class="kontyner">
+
+                    <div class="wydarzenia">
+ 
+                     
+                        <div class="calendar">
+                            
+                            <div class="header">
+
+                                <button id="prevBtn">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+
+                                <div class="monthYear" id="monthYear"></div>
+
+                                <button id="nextBtn">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+    
+                            <div class="days">
+                                <div class="day">pn</div>
+                                <div class="day">wt</div>
+                                <div class="day">śr</div>
+                                <div class="day">cz</div>
+                                <div class="day">pt</div>
+                                <div class="day">sb</div>
+                                <div class="day">nd</div>
+                            </div>
+    
+                            <div class="dates" id="dates"></div>
+
+                        </div>
+    
+                                    
+                                
+                        
+                        <div class="najwazniejsze_daty">
+                                                        
+                        
+                            <h3 class="rok"> 2025 </h3>
+    
+                            <div class="event">
+    
+                                <div class="event_left">
+    
+                                    <div class="event_date">
+    
+                                        <div class="date2">4</div>
+                                        <div class="month">marzec</div>
+    
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="event_right">
+    
+                                    <h4 class="event_title"> Rekrutacja elektroniczna </h4>
+    
+                                    <div class="event_description"> Nadsyłanie zgłoszeń rekrutacyjnych </div>
+    
+                                    <div class="evening_timing">
+                                        <img class="evening_timing_icon"src="grafika/zegar.png" alt="clock"> 10:00 am
+                                    </div>
+                                
+                                
+                                </div>
+    
+    
+                                
+                                
+    
+
+    
+                            </div>
+    
+                            <h3 class="rok"> 2024 </h3>
+    
+                            <div class="event">
+    
+                                <div class="event_left">
+    
+                                    <div class="event_date">
+    
+                                        <div class="date2">6</div>
+                                        <div class="month">marzec</div>
+    
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="event_right">
+    
+                                    <h4 class="event_title"> Rekrutacja elektroniczna </h4>
+    
+                                    <div class="event_description">
+                                        Nadsyłanie zgłoszeń rekrutacyjnych
+    
+                                    </div>
+    
+                                    <div class="evening_timing">
+                                        <img src="grafika/zegar.png" alt="clock"> 10:00 am
+                                    </div>
+    
+                                
+                                
+                                </div>
+                                                            
+    
+                            </div>
+    
+    
+                            <div class="event">
+    
+                                <div class="event_left">
+    
+                                    <div class="event_date">
+    
+                                        <div class="date2">4</div>
+                                        <div class="month">marzec</div>
+    
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="event_right">
+    
+                                    <h4 class="event_title"> Zadanie kwalifikacyjne </h4>
+    
+                                    <div class="event_description">
+                                        Termin przesyłania zadania kwalifikacyjnego
+    
+                                    </div>
+    
+                                    <div class="evening_timing">
+                                        <img src="grafika/zegar.png" alt="clock"> 10:00 am
+                                    </div>
+    
+                                
+                                
+                                </div>
+    
+                            
+                                    
+                                    
+                            
+                            </div>
+    
+                        </div>
+    
+                    
+                    </div>
+                     
+ 
+                    <div class="doc" id="doc">
+    
+    
+                        <ul class="dokumenty_2" style="margin-top:200px">
+                            <li>
+                                <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
+                                <a href="dokumenty/Oferta_oLEANpiada_.pdf" download>
+                                   <!-- <img src="grafika/download.png" alt="Pobierz ofertę"> -->
+                                    <span>🏫</span>
+
+                                </a>
+                                <a href="dokumenty/Oferta_oLEANpiada_.pdf" download> Oferta dla szkół</a>
+                            </li>
+                        
+                            <li>
+                                <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
+                                <a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" download>
+                                   <!-- <img src="grafika/download.png" alt="Pobierz regulamin"> -->
+                                    <span>📄</span>
+                                </a>
+                                <a href="dokumenty/REGULAMIIN-oLEANpiada.pdf" download> Regulamin</a>
+                            </li>
+                        
+                            <li>
+                                <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
+                                <a href="dokumenty/Kompendium-glowne.pdf" download>
+                                   <!-- <img src="grafika/download.png" alt="Pobierz kompendium"> -->
+                                   <span>📖</span>
+                                </a>
+                                <a href="dokumenty/Kompendium-glowne.pdf" download> Kompendium wiedzy</a>
+                            </li>
+                        
+                            <li>
+                                <!-- Poprawna struktura z obrazkiem wewnątrz linka -->
+                                <a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" download>
+                                   <!-- <img src="grafika/download.png" alt="Pobierz harmonogram"> -->
+                                    <span>📅</span>
+                                </a>
+                                <a href="dokumenty/Harmonogram-oLEANpiada-2024.pdf" download> Harmonogram finału</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                     
+ 
+ 
+ 
+                 </div>
+ 
+                   
+                
+            </article>
+ 
+
+
            
                              
 
@@ -566,7 +470,7 @@
         
                 <div class="contact-item">
                     <i></i>
-                    <p>inż. Szymon Ziaja</p>
+                    <p>inż. Piotr Rodzinka</p>
                     <p>e-mail: oleanpiada.agh@gmail.com </p>
                 </div>
 
@@ -585,8 +489,8 @@
         
                 <div class="contact-item">
                     <i></i>
-                    <p>inż. Karolina Sapko</p>
-                    <p>e-mail: lsapko@student.agh.edu.pl</p>
+                    <p>Julia Kobiór</p>
+                    <p>e-mail: DOPISAĆ</p>
                 </div>
 
                 
@@ -606,18 +510,19 @@
             </div>
 
 
- 	<div class="grant">
+            <div class="grant">
 
-	<p> 
-		oLEANpiada 2024 jest interdyscyplinarnym konkursem, organizowanym przez Studenckie Koło Naukowe Zarządzanie w ramach realizacji Grantu Rektora AGH - AGH LeanLine 4.0
+                <p> 
+                    oLEANpiada 2025 jest interdyscyplinarnym konkursem, organizowanym przez Studenckie Koło Naukowe Zarządzanie w ramach realizacji Grantu Rektora AGH - AGH LeanLine 5.0
 
-	</p>
-        
+                </p>
+            
                 
 
                 
             </div>
+            
         </footer>
 
-        </body>
-        </html>
+    </body>
+</html>
