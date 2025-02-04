@@ -11,12 +11,49 @@
 
 
     
-    /*                                   MENU                                       */
-    
+   
    
  .collage{
     height: 100vh;
+    background-size: 100%;
+    background-position: center 20%;
  }
+
+ .collage p {
+    font-size:17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 500px;
+ }
+    
+
+
+
+    .pierwszy-kafelek{
+
+        margin-right: auto;
+        margin-left: 4vw;
+        visibility: hidden;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    opacity: 0; /* Dodanie animacji zanikania */
+    cursor: pointer;
+    }
+
+    .pierwszy-kafelek.show {
+        visibility: visible;
+        opacity: 1; /* Widoczność z animacją */
+        transition: visibility 0s, opacity 0.5s ease-in-out;
+    }
+    img.pierwszy-kafelek{
+
+        max-height: 50px;
+        width: auto;
+    }
+
+    .przeswit{
+        display: none;
+    }
+
     
     /*ikonka menu*/
     .przycisk_menu span{
@@ -43,7 +80,7 @@
     }
     
     div.oleanpiada p {
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         padding: 0 15vw;
         margin: 0; /* Usunięcie marginesu domyślnego */
     }
@@ -88,10 +125,157 @@
 
     .partner h3, 
     .glowny_partner h3{
+        font-size: 14px;
+    }
 
-    font-size: 14px;
+
+    /* INFORMACJE */
+
+    .informacje{
+        height: 120vh !important;
+        background-color: white;
+        padding-top: 0px !important;
+       
+    
+    }
+    
+    
+    .when,
+    .where,
+    .who{
+    
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+        padding-bottom: 5px;
+    
+        align-items: center;
+       
+        justify-content: center;
+    }
+    
+    
+    .when_graphic,
+    .where_graphic,
+    .who_graphic{
+    
+        display: flex;
+        flex-direction: row;
+    
+        height: 70;
+    
+    
+        align-items: center;
+        text-align: center;    
+        justify-content: center;
+    
+        padding: 10px 0 10px;
+    
+        background-color: rgba(255, 255, 255, 0.3);
+        
+    }
+
+    .when_graphic span,
+    .where_graphic span,
+    .who_graphic span{
+        padding:0 15px ;
+        font-size: 50px;
+
+        
+
+    }
+
+
+
+    p.text{
+
+        height: fit-content !important;
+        min-height: 100px;
+        font-weight: bold;
+        font-size: 20px !important;
+        padding:15px !important;
+
+    }
+
+    .text:hover {
+        transform: scale(1.05);
+    }
+
+    .where_graphic p,
+    .who_graphic p,
+    .when_graphic p{
+
+        font-weight: bold;
+        font-size: 1.1rem !important;
+
 }
+
+
+
+.doc {
+    
+    padding: 0 !important ;
+    margin: 0!important;
+    height:fit-content;
+    min-height: fit-content;
+
+    background-image: url(../grafika/naglowek2.png);
+    background-repeat: no-repeat;
+    background-size: 220%;
+
+    /* Gradient maskujący górę i dół */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
 }
+
+ul.dokumenty_2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    list-style-type: none;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+ul.dokumenty_2 li {
+    padding: 10px 20px;
+    border-radius: 12px;
+    margin: 15px;
+    width: auto; 
+    max-width: none; 
+    display: inline-block; 
+}
+
+ul.dokumenty_2 li a {
+    font-weight: bolder;
+    color: rgb(227, 64, 64);
+    opacity: 1;
+    line-height: 15px;
+    font-size: 2.4rem;
+    text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+ul.dokumenty_2 li span{
+    font-size: 40px;
+}
+
+ul.dokumenty_2 li :nth-child(4){
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
 
 @media (min-width: 401px) and (max-width: 650px) {
 
