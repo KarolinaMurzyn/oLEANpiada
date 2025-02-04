@@ -322,7 +322,7 @@ ul.dokumenty_2 li img {
 
  /* RESPONSYWNOSC */
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 1000px) {
     
     #art1{
         display: flex;
@@ -507,10 +507,6 @@ ul.dokumenty_2 li img {
        
         background-repeat:repeat !important;
         background-size: 550% !important;
-    
-        /* Gradient maskujący górę i dół */
-        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     }
     
     ul.dokumenty_2 {
@@ -519,7 +515,6 @@ ul.dokumenty_2 li img {
         align-items: center; /* Centruje zawartość */
         margin: 60px 20px 50px !important;
         min-height: 80vh;
-        list-style-type: none;
         padding: 0; 
     }
     
@@ -557,59 +552,12 @@ ul.dokumenty_2 li img {
 
 }
 
-@media (min-width: 401px) and (max-width: 650px) {
-    .srodek { 
-        flex-direction: column;
-        align-items: center;
-    }
-    .dokumentacja {
-        display: none;
-    }
-   
-    article:nth-of-type(1) {
-        order: 1;
-    }
-    article:nth-of-type(2) {
-        order: 0; 
-}
-}
 
-@media (min-width: 651px) and (max-width: 980px) {
-    .srodek { 
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .dokumentacja {
-        display: none;
-    }
 
-    article:nth-of-type(1) {
-        order: 1;
-    }
-    article:nth-of-type(2) {
-        order: 0; 
-}
-.kontyner {
-    display: flex;
-    flex-direction: row; 
-}
-.najwazniejsze_daty {
-    padding-left: 15%; /* Zmniejszony padding-left */
-    margin-right: 5%; /* Zmniejszony margin-right */
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-}
 
-.calendar {
-    margin-left: 10%; /* Zmniejszony margin-left */
-    margin-top: 20px;
-   height: 250px;
-}
-}
 
-@media (min-width:981px) and ( max-width: 1250px){
+@media (min-width:1001px) and ( max-width: 1250px){
     .calendar {
         padding: 5px; 
         height: 240px;

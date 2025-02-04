@@ -8,6 +8,9 @@ div.oleanpiada {
     margin-top: 20px;
     padding: 0 150px;
     background-color:#F8FAFC;
+    background-image: url(../grafika/zebatka.png);
+    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
+    background-size:90%; /* Dopasowuje obraz do dostępnej przestrzeni */
     color: black;
     height: 100vh;
     display: flex;
@@ -35,6 +38,10 @@ div.oleanpiada p {
     height: 100vh;
     background-color: white;
     padding-top: 100px;
+    background-image: url(../grafika/zebatki_info.png);
+    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
+    background-position: right center;
+   
 
 }
 
