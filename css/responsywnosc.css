@@ -214,60 +214,49 @@
 
 
 .doc {
-    
-    padding: 0 !important ;
-    margin: 0!important;
-    height:fit-content;
-    min-height: fit-content;
-
-    background-image: url(../grafika/naglowek2.png);
-    background-repeat: no-repeat;
-    background-size: 220%;
-
-    /* Gradient maskujący górę i dół */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    padding: 5px 0 30px ;
+    margin:0!important;
+    background-repeat: repeat !important;
+    background-size: 250% !important; /* Jeszcze mniejsze tło */
 }
 
 ul.dokumenty_2 {
     display: flex;
     flex-direction: column;
-    margin: 10px 20px;
-    list-style-type: none;
+    align-items: center; /* Centruje zawartość */
+    margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
+    min-height: 50vh; /* Mniejsza wysokość */
     padding: 0; 
-    display: flex;
-    flex-wrap: wrap; 
 }
 
 ul.dokumenty_2 li {
-    padding: 10px 20px;
-    border-radius: 12px;
-    margin: 15px;
-    width: auto; 
-    max-width: none; 
-    display: inline-block; 
+    padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
+    border-radius: 5px;
+    margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center; /* Centruje tekst i ikonę */
+    min-height: fit-content !important;
+    text-align: center;
 }
 
 ul.dokumenty_2 li a {
-    font-weight: bolder;
-    color: rgb(227, 64, 64);
     opacity: 1;
-    line-height: 15px;
-    font-size: 2.4rem;
-    text-decoration: none; /* Usunięcie podkreślenia */
+    line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
+    font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
+    min-height: fit-content !important;
+    margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
 }
 
-ul.dokumenty_2 li span{
-    font-size: 40px;
+ul.dokumenty_2 li span {
+    font-size: 40px; /* Jeszcze mniejsza ikona */
+    margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
 }
 
-ul.dokumenty_2 li :nth-child(4){
-    margin-bottom: 50px;
+/* Dodatkowy odstęp dla ostatniego elementu */
+ul.dokumenty_2 li:last-child {
+    margin-bottom: 15px;
 }
-
-
-
-
 
 
 
@@ -284,14 +273,14 @@ ul.dokumenty_2 li :nth-child(4){
     .collage{
         height: 100vh;
         background-size: 100%;
-        background-position: center 20%;
+        background-position: center 50%;
        
      }
 
 
      .collage p {
         font-size:17px;
-        margin-bottom: 400px;
+        margin-bottom: 50px;
      }
 
      .pierwszy-kafelek{
@@ -449,6 +438,53 @@ ul.dokumenty_2 li :nth-child(4){
 }
 
 
+.doc {
+    padding: 5px 0 30px ;
+    margin:0!important;
+    background-repeat: repeat !important;
+    background-size: 400% !important; /* Jeszcze mniejsze tło */
+}
+
+ul.dokumenty_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centruje zawartość */
+    margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
+    min-height: 50vh; /* Mniejsza wysokość */
+    padding: 0; 
+}
+
+ul.dokumenty_2 li {
+    padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
+    border-radius: 5px;
+    margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center; /* Centruje tekst i ikonę */
+    min-height: fit-content !important;
+    text-align: center;
+}
+
+ul.dokumenty_2 li a {
+    opacity: 1;
+    line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
+    font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
+    min-height: fit-content !important;
+    margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
+}
+
+ul.dokumenty_2 li span {
+    font-size: 40px; /* Jeszcze mniejsza ikona */
+    margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
+}
+
+/* Dodatkowy odstęp dla ostatniego elementu */
+ul.dokumenty_2 li:last-child {
+    margin-bottom: 15px;
+}
+
+
+
     
     .oleanpiada h3{
 
@@ -483,17 +519,18 @@ ul.dokumenty_2 li :nth-child(4){
     }
 
 
-    .partner h3, 
-    .glowny_partner h3{
 
-    font-size: 16px;
+    .contact-container{
+        
+        flex-direction: column!important;
+    }
 }
    
 
-}
 
 
-@media (min-width: 651px) and (max-width: 900px) {
+
+@media screen and (min-width: 651px) and (max-width: 1200) {
 
 
    
@@ -502,20 +539,21 @@ ul.dokumenty_2 li :nth-child(4){
 
     .collage{
         height: 100vh;
-        background-size: 100%;
-        background-position: center 20%;
+        background-size: 60% !important;
+        background-position: center 55%;
+        background-size: 80%;
        
-     }
+    }
     
      .collage p {
         font-size:17px;
-        margin-bottom: 500px;
-     }
+        margin-bottom: 5px;
+    }
         
     
     
     
-        .pierwszy-kafelek{
+    .pierwszy-kafelek{
     
           
             margin-left: 4vw;
@@ -523,7 +561,7 @@ ul.dokumenty_2 li :nth-child(4){
             transition: visibility 0s, opacity 0.5s ease-in-out;
             opacity: 0; /* Dodanie animacji zanikania */
             cursor: pointer;
-        }
+    }
     
       
         img.pierwszy-kafelek{
@@ -554,9 +592,23 @@ ul.dokumenty_2 li :nth-child(4){
         }
     
     
+        .informacje {
+            height: 120vh !important;
+            background-color: white;
+            background-size: 100%;
+            background-position: bottom !important;
+        
+            display: flex; /* Włączenie Flexboxa */
+            flex-direction: column; /* Układ w kolumnie */
+            justify-content: center; /* Wycentrowanie w pionie */
+           /* align-items: center; /* Wycentrowanie w poziomie */
+            text-align: center; /* Wyrównanie tekstu */
+        }
+    
+    
         div.oleanpiada {
             
-            height: fit-content !important;
+            height: 100vh !important;
             padding: 30px 0 !important;
             background-repeat: repeat !important;
             background-size:100% !important;
@@ -564,35 +616,119 @@ ul.dokumenty_2 li :nth-child(4){
         }
         
         div.oleanpiada p {
-            font-size: 0.8rem;
+            font-size: 1.5rem !important;
             padding: 0 15vw;
             margin: 0; /* Usunięcie marginesu domyślnego */
             margin-left: 40px !important;
+        }
+
+       
+    
+        
+        
+        .when,
+        .where,
+        .who{
+        
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        
+            padding-bottom: 5px;
+        
+            align-items: center;
+           
+            justify-content: center;
+        }
+        
+        
+        .when_graphic,
+        .where_graphic,
+        .who_graphic{
+        
+            display: flex;
+            flex-direction: row;
+        
+            height: 70;
+        
+        
+            align-items: center;
+            text-align: center;    
+            justify-content: center;
+        
+            padding: 10px 0 10px;
+        
+            background-color: rgba(255, 255, 255, 0.3);
+            
+        }
+    
+        .when_graphic span,
+        .where_graphic span,
+        .who_graphic span{
+            padding:0 15px ;
+            font-size: 50px;
+    
+            
+    
         }
     
     
     
         p.text{
     
-            height: 120px;
-            padding:30px 40px;
-            
-            width: 70% !important;
-        
-            font-size: 13px !important;
-            
-        
-            background-color: #62CACA;
-            border-radius: 20px;
-        }
+            height: fit-content !important;
+            min-height: 100px;
+            font-weight: bold;
+            font-size: 20px !important;
+            padding:15px !important;
     
-   
+        }
 
-    .sekcje li a{
-        font-size:13px;
-        transition: font-size 0.8s; 
-    }
 
+        .doc {
+            padding: 5px 0 30px ;
+            margin:0!important;
+            background-repeat: repeat !important;
+            background-size: 250% !important; /* Jeszcze mniejsze tło */
+        }
+        
+        ul.dokumenty_2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centruje zawartość */
+            margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
+            min-height: 50vh; /* Mniejsza wysokość */
+            padding: 0; 
+        }
+        
+        ul.dokumenty_2 li {
+            padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
+            border-radius: 5px;
+            margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center; /* Centruje tekst i ikonę */
+            min-height: fit-content !important;
+            text-align: center;
+        }
+        
+        ul.dokumenty_2 li a {
+            opacity: 1;
+            line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
+            font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
+            min-height: fit-content !important;
+            margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
+        }
+        
+        ul.dokumenty_2 li span {
+            font-size: 40px; /* Jeszcze mniejsza ikona */
+            margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
+        }
+        
+        /* Dodatkowy odstęp dla ostatniego elementu */
+        ul.dokumenty_2 li:last-child {
+            margin-bottom: 15px;
+        }
 
     .partners{
         display: flex;
@@ -610,7 +746,7 @@ ul.dokumenty_2 li :nth-child(4){
     .glowny_partner h3{
 
     font-size: 18px;
-}
+    }
    
 }
 
@@ -665,94 +801,6 @@ ul.dokumenty_2 li :nth-child(4){
 
 
 
-@media screen and (max-width: 980px){
-        
-    ul li.INFO
-    {
-        display: block;
-    }
-
-    ul li.INFO a
-    {
-        display: block;
-    }
-
-    
-    .loga{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .agh_logo,
-    .sknz_logo,
-    .faculty_logo{
-        flex:1;
-    }
-
-    .loga_agh{
-        display: flex;
-        flex-direction: row;
-    }
-
-    
-    .glowny_partner,
-    .partner{
-        flex: 1;
-    }
-
-    
-
-img#faculty_logo,
-img#sknz_logo{
-    
-    width: 60%;
-   
-}
-
-img#partner,
-img#glowny_partner{
-
-    width: 50%;
-}
-
-
-
-img#agh_logo
-{
-    margin-top: 0px;
-    width: 55%;
-   
-}
-
-    article {
-        
-        min-height: fit-content;
-       
-    }
-
-    .oleanpiada{
-        padding: 0 40px !important; 
-        
-    }
-
-    .oleanpiada p{
-        font-size: 15px !important;
-    
-        line-height: 23px !important;
-    }
-
-    .oleanpiada h3{
-
-        font-size: 17px;
-        text-align: center;
-    }
-
-
-
-    
-
-}
 
 
 @media screen and (max-width:500px) and (pointer: coarse){
@@ -768,12 +816,5 @@ img#agh_logo
     
 }
 
-@media screen and (min-width:985px) and (max-width:1200){
 
-    .partner h3, 
-    .glowny_partner h3{
-
-        font-size: 18px;
-    }
-}
 

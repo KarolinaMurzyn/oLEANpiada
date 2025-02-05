@@ -40,6 +40,7 @@ article {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     font-family: "Poppins", sans-serif;
+    margin-top: 1vh;
     margin-bottom: 20px;
     margin-left:10vw;
     background-color: #e8edf3;
@@ -140,12 +141,13 @@ color: black;
     display: flex;
     flex-direction: column; 
     height: fit-content;
+    margin-top: 150px;
 }
 
 .wydarzenia{
     display: flex;
     flex-direction: row; 
-    margin: 0 auto;
+    margin: 0 40px;
 }
 
 
@@ -166,6 +168,8 @@ h3, .dokumentacja h3{
     text-align: left;
     font-size: 25px;
     margin-left: 10px;
+    margin-top: 10vh;
+   
    
 }
 
@@ -199,7 +203,7 @@ span.highlighted_date{
 
 
 .najwazniejsze_daty{
-    min-width: 800px;
+   /* min-width: 800px;*/
     max-width: 800px;
     margin :0 auto;
 
@@ -327,10 +331,12 @@ ul.dokumenty_2 li img {
     #art1{
         display: flex;
         flex-direction: column;
+        padding-top: 100px !important;
     }
 
     .wydarzenia{
         flex-direction: column;
+        align-items: center;
     }
     
     .srodek { 
@@ -365,15 +371,16 @@ ul.dokumenty_2 li img {
 
 
 
-
+    
+    
         /*KALENDARZ*/
     .calendar {
         
         width: 80vw ;
         height: fit-content;
-        padding: 10px;
+        padding: 0;
         margin-bottom: 20px;
-        margin-left:10vw;  
+         margin-left:0;  
     
     }
 
@@ -439,14 +446,17 @@ ul.dokumenty_2 li img {
 
 
     .najwazniejsze_daty{
+        display: flex;
+        flex-direction: column;
         width: 100vw !important;
        
         margin: 0 auto;
+        align-items: center;
     }
 
     .najwazniejsze_daty .event {
         border-radius: 8px;
-        margin: 40px 5%;
+       
         width: 80vw;
         
     }
@@ -500,55 +510,6 @@ ul.dokumenty_2 li img {
 
 
 
-    .doc {
-       
-        padding: 20px 0 70px;
-        margin: 100px 80px;
-       
-        background-repeat:repeat !important;
-        background-size: 550% !important;
-    }
-    
-    ul.dokumenty_2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centruje zawartość */
-        margin: 60px 20px 50px !important;
-        min-height: 80vh;
-        padding: 0; 
-    }
-    
-    ul.dokumenty_2 li {
-        padding: 20px; /* Więcej przestrzeni wewnętrznej */
-        border-radius: 12px;
-        margin: 30px; /* Większy odstęp między elementami */
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center; /* Centruje tekst i ikonę */
-        min-height: fit-content !important;
-        text-align: center;
-    }
-    
-    ul.dokumenty_2 li a {
-        opacity: 1;
-        line-height: 1.6 !important; 
-        font-size: 2.4rem;
-        
-        min-height: fit-content !important;
-        margin-top: 10px; 
-    }
-    
-    ul.dokumenty_2 li span {
-        font-size: 80px; 
-        margin-bottom: 10px; 
-    }
-    
-    /* Dodatkowy odstęp dla ostatniego elementu */
-    ul.dokumenty_2 li:last-child {
-        margin-bottom: 50px;
-    }
-    
-    
 
 }
 
@@ -559,45 +520,129 @@ ul.dokumenty_2 li img {
 
 @media (min-width:1001px) and ( max-width: 1250px){
     .calendar {
-        padding: 5px; 
-        height: 240px;
+        
+        width: 80vw ;
+        height: fit-content;
+        padding: 0;
+        margin-bottom: 20px;
+         margin-left:0;
+         margin-top: 10vh ;  
+    
+    }
+
+
+    .header {
+    
+        padding: 4px 1px;
     }
 
     .monthYear {
-        font-size: 1em; 
+        text-align: center;
+        font-size: 1.2rem;
+        width: max-content;
+        color: #00BFB2;
+        font-weight: 800;
     }
 
-    .day {
-        font-size: 0.9em; 
+    .header button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.2);
+        
+    }
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+    }
+
+    .day
+    {
+    font-weight:300;
     }
 
     .date {
-        font-size: 0.9em; 
-        width: 20px; 
-        height: 20px; 
+    
+        font-size: 1rem;
+        border-radius: 50px;
+        height: 55px;
+        transition: 0.2s;
     }
 
-    .highlight {
-        font-size: 1em; 
-}
-.date:hover, 
-    .date.active {
-        width: 20px; 
-        height: 20px; 
+    .date:hover, .date.active {
+    
+        width: 25px; 
+        height: 50px; 
+        width: 50px;
     }
+
     .calendar .highlight {
-        width: 20px;
-        height: 20px;
+        
+        width: 25px; 
+        height: 25px;
+
+
     }
+
+
+    .najwazniejsze_daty {
+        display: flex;
+        flex-direction: column;
+        width: 100vw !important;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .najwazniejsze_daty .event {
+        border-radius: 6px; /* Mniejsze zaokrąglenie */
+        width: 40vw; /* Zmniejszenie szerokości */
+        padding: 0px; /* Mniejszy padding */
+    }
+    
+    .event .event_left {
+        padding: 0px;
+        border-radius: 6px 0 0 6px; /* Mniejsze zaokrąglenie */
+    }
+    
+    .event .event_left .date2 {
+        font-size: 25px; /* Mniejsza czcionka */
+    }
+    
+    .event .event_left .month {
+        font-size: 16px; /* Mniejsza czcionka */
+    }
+    
+    .event .event_right h4.event_title {
+        font-size: 16px; /* Mniejsza czcionka */
+        margin: 10px 0 6px 0; /* Mniejszy odstęp */
+        text-align: center; 
+    }
+    
+    .evening_timing,
+    .event_description {
+        padding-top: 5px; /* Mniejszy odstęp */
+        text-align: center; 
+        font-size: 14px; /* Mniejsza czcionka */
+    }
+    
+    .event .event_right {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    div.evening_timing img {
+        margin-top: 5px;
+        height: 20px !important; /* Mniejsza ikona */
+        padding-right: 0;
+    }
+
 }
-
-
-article#art1{
-
-    width:100%;
-   
-    padding-top: 200px;
-}
-
-
 

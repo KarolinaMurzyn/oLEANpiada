@@ -31,7 +31,7 @@ div.collage{
     height: 100vh;
     background-image: url("../grafika/Przezroczyste_logo.png");
     background-repeat: no-repeat; /* Zapobiega powtarzaniu */
-    background-size: 40%; /* Dopasowuje obraz do dostępnej przestrzeni */
+    background-size: 45%; /* Dopasowuje obraz do dostępnej przestrzeni */
     background-position: center 40%; /* Ustawia obraz na środku */
     justify-content: center; 
     align-items: center; 
@@ -40,7 +40,7 @@ div.collage{
 }
 
 .collage p {
-    font-size:30px;
+    font-size:25px;
     font-weight: bold;
     text-align: center;
     margin-top: 350px; /* Opcjonalne przesunięcie w dół */
