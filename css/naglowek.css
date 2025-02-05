@@ -1,287 +1,173 @@
+/* ==========================
+   header.css
+   - Nagłówek, nawigacja, "hero"/collage
+   ========================== */
 
-*, *::before, *::after {
-    box-sizing: border-box;
-   
-    margin: 0;
-    padding: 0;
-
-}
-
-body{
-  
-    width: 100vw;
-   font-family: 'Titillium Web', sans-serif;
-}
-
-/**********************************************************************************************/
-/*                                     logo pierwsza strona                                   */
-/**********************************************************************************************/
-
-
-div.collage{
-   
-    display: flex; 
-    align-items: center; 
-   
-}
-
-
+/* Sekcja „collage” (hero) */
 .collage {
     z-index: 100;
     height: 100vh;
     background-image: url("../grafika/Przezroczyste_logo.png");
-    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
-    background-size: 45%; /* Dopasowuje obraz do dostępnej przestrzeni */
-    background-position: center 40%; /* Ustawia obraz na środku */
-    justify-content: center; 
-    align-items: center; 
-    justify-content: center; 
-    align-items: center; 
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: center 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .collage p {
-    font-size:25px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-top: 350px; /* Opcjonalne przesunięcie w dół */
+    margin-top: 350px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Animacja pojawienia się tekstu */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
-
-
-/*                                   MENU 1                                      */
-
-
-header{
+/* Nagłówek główny */
+header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 101;
 }
 
-.nawigacja{
-
+/* Pojemnik na nawigację */
+.nawigacja {
     width: 100%;
     padding: 0;
     z-index: 101;
-
 }
 
-
-.menu{
+.menu {
     width: 100%;
     height: 100%;
     align-items: center;
     text-align: center;
     display: flex;
-    background-color: white  ;
+    background-color: white;
 }
 
-
-/* "kafelki" */
-
-.pierwszy-kafelek{
-
+/* Logo (pierwszy kafelek) */
+.pierwszy-kafelek {
     margin-right: auto;
     margin-left: 4vw;
     visibility: hidden;
-   transition: visibility 0s, opacity 0.5s ease-in-out;
-   opacity: 0; /* Dodanie animacji zanikania */
-   cursor: pointer;
+    transition: visibility 0s, opacity 0.5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
 }
-
 .pierwszy-kafelek.show {
     visibility: visible;
-    opacity: 1; /* Widoczność z animacją */
+    opacity: 1;
     transition: visibility 0s, opacity 0.5s ease-in-out;
 }
-img.pierwszy-kafelek{
-    height:100%;
+img.pierwszy-kafelek {
+    height: 100%;
     max-height: 80px;
     width: auto;
 }
-.sekcje{
+
+/* Sekcje w menu */
+.sekcje {
     display: flex;
-    
-
     height: 100%;
-
     align-items: center;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
-
 }
-
-.sekcje li{
-
-    flex:1;
-   
-    display:flex;
+.sekcje li {
+    flex: 1;
+    display: flex;
     flex-direction: row;
-
     align-items: center;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
-
     max-width: 500px;
-   
-}
-
-li{
-   /* flex:1;*/
     list-style: none;
-    padding: auto;
 }
-
-
-
-
-.sekcje a:hover{
-
-   /* background-color: rgba(0, 0, 0, 0.35);*/
+.sekcje li a {
+    display: block;
+    height: 100%;
+    padding: 13px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: font-size 0.8s;
+}
+.sekcje a:hover {
     color: #000000;
     transition: color 1.5s;
-
 }
 
-
-
-.nawigacja a{
-
-    justify-content: center ;
+/* Linki w menu */
+.nawigacja a {
     text-align: center;
-
     cursor: pointer;
-
     text-decoration: none;
     color: #00788F;
-    
 }
 
-
-.sekcje li a{
-    display: block;
-
-    height: 100%;
-   padding: 13px 30px;
-
-    font-weight: bold;
-    font-size:20px;
-    transition: font-size 0.8s; 
-}
-
-
-
-
-
+/* Przycisk menu (mobile) */
 .przycisk_menu {
-    display: none; /* Domyślnie ukryj przycisk */
-
+    display: none; /* Domyślnie ukryty */
     text-align: center;
     justify-content: center;
-
-    cursor: pointer; 
-
+    cursor: pointer;
     padding: 0.5rem 0;
-    
-
 }
 
-.przeswit{
+/* Dodatkowy pasek */
+.przeswit {
     height: 25px;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     opacity: 0.9;
 }
 
-ul li.INFO
-{
+/* 
+ul li.INFO {
     display: none;
 }
-
-ul li.INFO a
-{
+ul li.INFO a {
     display: none;
-}
+}*/
 
-
-/*                                 MENU 2                                     */
-
-
-.menu_rozwijane{
-
-    display:none;
-    position:absolute;
-    top: 100%; /* Ustawienie odległości od góry */
+/* Menu rozwijane (drugie) */
+.menu_rozwijane {
+    display: none;
+    position: absolute;
+    top: 100%;
     overflow: hidden;
-
     height: 0;
     width: 100%;
-    
     align-items: center;
     text-align: center;
-
-    margin:auto;
-
+    margin: auto;
     border-bottom-left-radius: 11px;
     border-bottom-right-radius: 11px;
-
     background-color: #fcfcfc;
-   
     z-index: 200000;
 }
-
-.menu_rozwijane li{   
-
-    display:flex;
-
+.menu_rozwijane li {
+    display: flex;
     align-items: center;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
-
     padding: 23px 0;
-    
     text-decoration: none;
-    
 }
-
-.menu_rozwijane a{
-    font-size:23px;
+.menu_rozwijane a {
+    font-size: 23px;
 }
-
-
-.menu_rozwijane li:hover{
-   /* background-color: rgba(0, 0, 0, 0.4);*/
+.menu_rozwijane li:hover {
+    /* ewentualne hover */
 }
-
-.menu_rozwijane li a:hover{
-    color:black;
+.menu_rozwijane li a:hover {
+    color: black;
     transition: color 1.5s;
-
-
 }
-
-
-
-.menu_rozwijane.open{
-   
+.menu_rozwijane.open {
     height: auto;
 }
-
-span{
+span {
     font-size: 25px;
 }
-

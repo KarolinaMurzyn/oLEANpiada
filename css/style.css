@@ -20,13 +20,21 @@ article {
     display: flex;
     flex-direction: column;
    
-    margin: 10px;
+    margin: 0px 10px ;
     min-height: fit-content;
     flex: 1;
     box-sizing: border-box; /* Dodaj tę linijkę */
     background-color: #f8fafc;
     z-index: 0;
     overflow: hidden; /* Zapobiega poziomemu przewijaniu dla artykułów */
+}
+
+article#art1{
+
+    background-image: url("../grafika/zebatka_kalendarz.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 
@@ -645,4 +653,6 @@ ul.dokumenty_2 li img {
     }
 
 }
+
+
 

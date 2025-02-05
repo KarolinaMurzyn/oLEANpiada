@@ -1,0 +1,29 @@
+/* ==========================
+   base.css 
+   - reset + style globalne
+   ========================== */
+
+/* Reset / Box sizing / Margin / Padding */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Podstawowe style dla body */
+body {
+    width: 100vw;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Animacje globalne (jeżeli chcesz mieć je w jednym miejscu) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

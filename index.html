@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/responsywnosc.css"> 
         <link rel="stylesheet" type="text/css" href="css/prawa_strona.css"> 
         <link rel="stylesheet" type="text/css" href="css/stopka.css"> 
+        <link rel="stylesheet" type="text/css" href="css/baza.css">
        
         <script src="js/main.js" defer></script>
         <script src="js/rozwijane_menu.js" ></script>
@@ -57,7 +58,7 @@
                 
                     <ul class="sekcje">
                         
-                        <li class="pierwszy-kafelek" > <a   onclick="goToSection('oleanpiada')" >HOME</a> </li>
+                        <li class="pierwszy-kafelek" > <a   onclick="goToSection('collage')" >HOME</a> </li>
 
                         <li> <a  onclick="goToSection('oleanpiada')"  href="#">HOME</a> </li>
 
@@ -66,10 +67,12 @@
                         <!-- <li> <a   href="edycje.html">EDYCJE</a> </li> -->
                        
                         <li> <a   onclick="goToSection('informacje')">INFORMACJE</a> </li>
+
+                        <li class="INFO"> <a class="INFO"  onclick="goToSection('wydarzenia')" >KALENDARIUM</a> </li>
                         
                         <li> <a  onclick="goToSection('doc')" >DOKUMENTY</a> </li>
 
-                        <li class="INFO"> <a class="INFO"  onclick="goToSection('kalendarium')" >KALENDARIUM</a> </li>
+                        
 
                         <li> <a  onclick="goToSection('footer')" >KONTAKT</a> </li>
                         
@@ -82,7 +85,7 @@
 
                 </div> 
 
-                <div class="przeswit"></div>
+               <!-- <div class="przeswit"></div> -->
 
                 <div class="menu_rozwijane">
 
@@ -91,10 +94,12 @@
                     <!-- <li> <a   href="test/test_probny.html">TEST</a> </li> -->
                    
                     <li> <a   onclick="goToSection('informacje')">INFORMACJE</a> </li>
+
+                    <li class="INFO"> <a class="INFO"  onclick="goToSection('wydarzenia')" >KALENDARIUM</a> </li>
                     
                     <li> <a  onclick="goToSection('doc')" >DOKUMENTY</a> </li>
 
-                    <li class="INFO"> <a class="INFO"  onclick="goToSection('kalendarium')" >KALENDARIUM</a> </li>
+                   
 
                     <li> <a  onclick="goToSection('footer')" >KONTAKT</a> </li>
 
@@ -237,7 +242,7 @@
                 <!-- KALENDARZ -->
                 <div class="kontyner">
 
-                    <div class="wydarzenia">
+                    <div class="wydarzenia" id="wydarzenia">
  
                      
                         <div class="calendar">
@@ -460,6 +465,19 @@
 
         </div>
 
+        <div class="logos-container">
+            <a href="https://www.facebook.com/SKNZ.AGH/?locale=pl_PL" target="_blank">
+                <img src="grafika/sknz.png" alt="SKNZ">
+            </a>
+            <a href="https://wilgz.agh.edu.pl/" target="_blank">
+                <img src="grafika/logo_wydzial.png" alt="WILiGZ">
+            </a>
+            <a href="https://www.agh.edu.pl/" target="_blank">
+                <img src="grafika/LogoAGH_symbol_kolor_RGB-01.png" alt="AGH">
+            </a>
+        </div>
+        
+
         <footer id="footer">
             
             <div class="contact-container">
@@ -494,7 +512,7 @@
                     <div class="contact-item">
                         <i></i>
                         <p>Julia Kobiór</p>
-                        <p>e-mail: DOPISAĆ</p>
+                        <p>e-mail: juliakobior@student.agh.edu.pl</p>
                     </div>
 
                     

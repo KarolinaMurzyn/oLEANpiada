@@ -1,820 +1,559 @@
-@media (min-width: 300px) and (max-width: 400px) {
+/* ==========================================
+   responsive.css
+   Zawiera wszystkie reguły @media z responsywnosc.css
+   ========================================== */
 
+/* 300px - 400px */
+@media (min-width: 300px) and (max-width: 400px) {
 
     html, body {
         min-width: 300px;
         overflow-x: hidden; /* Ukrywa pasek przewijania po osiągnięciu minimalnej szerokości */
     }
 
+    .collage {
+        height: 100vh;
+        background-size: 100%;
+        background-position: center 20%;
+    }
+    .collage p {
+        font-size: 17px;
+        margin-bottom: 500px;
+    }
 
-  
-
-
-    
-   
-   
- .collage{
-    height: 100vh;
-    background-size: 100%;
-    background-position: center 20%;
-   
- }
-
- .collage p {
-    font-size:17px;
-    margin-bottom: 500px;
- }
-    
-
-
-
-    .pierwszy-kafelek{
-
-      
+    .pierwszy-kafelek {
         margin-left: 4vw;
         visibility: hidden;
         transition: visibility 0s, opacity 0.5s ease-in-out;
         opacity: 0; /* Dodanie animacji zanikania */
         cursor: pointer;
     }
-
-  
-    img.pierwszy-kafelek{
-
+    img.pierwszy-kafelek {
         max-height: 50px;
-      
     }
 
-    .przeswit{
+    .przeswit {
         display: none;
     }
 
-    
-    /*ikonka menu*/
-    .przycisk_menu span{
+    /* Ikonka menu */
+    .przycisk_menu span {
         font-size: 18px;
     }
 
-
-    
-    /*                                 MENU 2                                     */
-    
-    
-  
-    .menu_rozwijane a{
-        font-size:16px;
-        transition: font-size 0.8s; 
+    /* Menu rozwijane */
+    .menu_rozwijane a {
+        font-size: 16px;
+        transition: font-size 0.8s;
     }
 
-
     div.oleanpiada {
-        
         height: fit-content !important;
         padding: 30px 0 !important;
         background-repeat: repeat !important;
-        background-size:100% !important;
-        
+        background-size: 100% !important;
     }
-    
     div.oleanpiada p {
         font-size: 0.8rem;
         padding: 0 15vw;
-        margin: 0; /* Usunięcie marginesu domyślnego */
+        margin: 0;
         margin-left: 40px !important;
     }
 
-
-
-    p.text{
-
+    p.text {
         height: 120px;
-        padding:30px 40px;
-        
+        padding: 30px 40px;
         width: 70% !important;
-    
         font-size: 13px !important;
-        
-    
         background-color: #62CACA;
         border-radius: 20px;
     }
+    .text:hover {
+        transform: scale(1.05);
+    }
 
-   
-   
-    /*                                   Stopka                                     */
-   
-
-    footer{
+    footer {
         flex-direction: column;
         text-align: center;
     }
-
-    .grant p{
+    .grant p {
         font-size: 12px;
     }
 
-
-
-    .partners{
-
+    .partners {
         flex-direction: column;
     }
-
-
-    .partner h3, 
-    .glowny_partner h3{
+    .partner h3,
+    .glowny_partner h3 {
         font-size: 14px;
     }
 
-
     /* INFORMACJE */
-
-    .informacje{
+    .informacje {
         height: 120vh !important;
         background-color: white;
         padding-top: 0px !important;
-        background-size:100%;
+        background-size: 100%;
         background-position: bottom !important;
-       
-    
     }
-    
-    
     .when,
     .where,
-    .who{
-    
+    .who {
         display: flex;
         flex-direction: column;
         height: auto;
-    
         padding-bottom: 5px;
-    
         align-items: center;
-       
         justify-content: center;
     }
-    
-    
     .when_graphic,
     .where_graphic,
-    .who_graphic{
-    
+    .who_graphic {
         display: flex;
         flex-direction: row;
-    
         height: 70;
-    
-    
         align-items: center;
-        text-align: center;    
+        text-align: center;
         justify-content: center;
-    
         padding: 10px 0 10px;
-    
         background-color: rgba(255, 255, 255, 0.3);
-        
     }
-
     .when_graphic span,
     .where_graphic span,
-    .who_graphic span{
-        padding:0 15px ;
+    .who_graphic span {
+        padding: 0 15px;
         font-size: 50px;
-
-        
-
     }
 
-
-
-    p.text{
-
+    p.text {
         height: fit-content !important;
         min-height: 100px;
         font-weight: bold;
         font-size: 20px !important;
-        padding:15px !important;
-
+        padding: 15px !important;
     }
-
-    .text:hover {
-        transform: scale(1.05);
-    }
-
     .where_graphic p,
     .who_graphic p,
-    .when_graphic p{
-
+    .when_graphic p {
         font-weight: bold;
         font-size: 1.1rem !important;
+    }
 
+    .doc {
+        padding: 5px 0 30px;
+        margin: 0 !important;
+
+        background-size: 250% !important; /* Jeszcze mniejsze tło */
+    }
+    ul.dokumenty_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 5px 15px !important;
+        min-height: 50vh;
+        padding: 0;
+    }
+    ul.dokumenty_2 li {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        min-height: fit-content !important;
+        text-align: center;
+    }
+    ul.dokumenty_2 li a {
+        opacity: 1;
+        line-height: 1.2 !important;
+        font-size: 1.2rem !important;
+        min-height: fit-content !important;
+        margin-top: 2px;
+    }
+    ul.dokumenty_2 li span {
+        font-size: 40px;
+        margin-bottom: 2px;
+    }
+    ul.dokumenty_2 li:last-child {
+        margin-bottom: 15px;
+    }
 }
 
-
-
-.doc {
-    padding: 5px 0 30px ;
-    margin:0!important;
-    background-repeat: repeat !important;
-    background-size: 250% !important; /* Jeszcze mniejsze tło */
-}
-
-ul.dokumenty_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centruje zawartość */
-    margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
-    min-height: 50vh; /* Mniejsza wysokość */
-    padding: 0; 
-}
-
-ul.dokumenty_2 li {
-    padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
-    border-radius: 5px;
-    margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center; /* Centruje tekst i ikonę */
-    min-height: fit-content !important;
-    text-align: center;
-}
-
-ul.dokumenty_2 li a {
-    opacity: 1;
-    line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
-    font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
-    min-height: fit-content !important;
-    margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
-}
-
-ul.dokumenty_2 li span {
-    font-size: 40px; /* Jeszcze mniejsza ikona */
-    margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
-}
-
-/* Dodatkowy odstęp dla ostatniego elementu */
-ul.dokumenty_2 li:last-child {
-    margin-bottom: 15px;
-}
-
-
-
-
-}
-
-
-
-
+/* 401px - 650px */
 @media (min-width: 401px) and (max-width: 650px) {
 
-
-    
-    .collage{
+    .collage {
         height: 100vh;
         background-size: 100%;
         background-position: center 50%;
-       
-     }
-
-
-     .collage p {
-        font-size:17px;
+    }
+    .collage p {
+        font-size: 17px;
         margin-bottom: 50px;
-     }
+    }
 
-     .pierwszy-kafelek{
-
-      
+    .pierwszy-kafelek {
         margin-left: 4vw;
         visibility: hidden;
         transition: visibility 0s, opacity 0.5s ease-in-out;
-        opacity: 0; /* Dodanie animacji zanikania */
+        opacity: 0;
         cursor: pointer;
     }
-
-  
-    img.pierwszy-kafelek{
-
+    img.pierwszy-kafelek {
         max-height: 50px;
-      
     }
 
-    .przeswit{
+    .przeswit {
         display: none;
     }
-        
-  
 
-    #og{
+    #og {
         font-size: 20px;
     }
-    
 
-
-   
-    /*                                   MENU                                       */
-   
- 
-    
-   
-
-    /*ikonka menu*/
-    .przycisk_menu span{
+    /* Ikonka menu */
+    .przycisk_menu span {
         font-size: 26px;
     }
 
-
-    
-    /*                                 MENU 2                                     */
-   
-    
-    .menu_rozwijane a{
-        font-size:18px;
-        transition: font-size 0.8s; 
+    /* Menu rozwijane */
+    .menu_rozwijane a {
+        font-size: 18px;
+        transition: font-size 0.8s;
     }
 
-
-     /* INFORMACJE */
-
-     .informacje{
+    /* INFORMACJE */
+    .informacje {
         height: 120vh !important;
         background-color: white;
         padding-top: 0px !important;
-        background-size:100%;
+        background-size: 100%;
         background-position: bottom !important;
-       
-    
     }
 
-
     div.oleanpiada {
-        
         height: fit-content !important;
         padding: 30px 0 !important;
         background-repeat: repeat !important;
-        background-size:100% !important;
-        
+        background-size: 100% !important;
     }
-    
     div.oleanpiada p {
         font-size: 0.95rem !important;
         padding: 0 15vw;
-        margin: 0; /* Usunięcie marginesu domyślnego */
+        margin: 0;
         margin-left: 40px !important;
     }
 
-    
-    
     .when,
     .where,
-    .who{
-    
+    .who {
         display: flex;
         flex-direction: column;
         height: auto;
-    
         padding-bottom: 5px;
-    
         align-items: center;
-       
         justify-content: center;
     }
-    
-    
     .when_graphic,
     .where_graphic,
-    .who_graphic{
-    
+    .who_graphic {
         display: flex;
         flex-direction: row;
-    
         height: 70;
-    
-    
         align-items: center;
-        text-align: center;    
+        text-align: center;
         justify-content: center;
-    
         padding: 10px 0 10px;
-    
         background-color: rgba(255, 255, 255, 0.3);
-        
     }
-
     .when_graphic span,
     .where_graphic span,
-    .who_graphic span{
-        padding:0 15px ;
+    .who_graphic span {
+        padding: 0 15px;
         font-size: 50px;
-
-        
-
     }
 
-
-
-    p.text{
-
+    p.text {
         height: fit-content !important;
         min-height: 100px;
         font-weight: bold;
         font-size: 20px !important;
-        padding:15px !important;
-
+        padding: 15px !important;
     }
-
     .text:hover {
         transform: scale(1.05);
     }
-
     .where_graphic p,
     .who_graphic p,
-    .when_graphic p{
-
+    .when_graphic p {
         font-weight: bold;
         font-size: 1.1rem !important;
+    }
 
-}
+    .doc {
+        padding: 5px 0 30px;
+        margin: 0 !important;
+        background-size: 400% !important; /* Jeszcze mniejsze tło */
+    }
+    ul.dokumenty_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 5px 15px !important;
+        min-height: 50vh;
+        padding: 0;
+    }
+    ul.dokumenty_2 li {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        min-height: fit-content !important;
+        text-align: center;
+    }
+    ul.dokumenty_2 li a {
+        opacity: 1;
+        line-height: 1.2 !important;
+        font-size: 1.2rem !important;
+        min-height: fit-content !important;
+        margin-top: 2px;
+    }
+    ul.dokumenty_2 li span {
+        font-size: 40px;
+        margin-bottom: 2px;
+    }
+    ul.dokumenty_2 li:last-child {
+        margin-bottom: 15px;
+    }
 
-
-.doc {
-    padding: 5px 0 30px ;
-    margin:0!important;
-    background-repeat: repeat !important;
-    background-size: 400% !important; /* Jeszcze mniejsze tło */
-}
-
-ul.dokumenty_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centruje zawartość */
-    margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
-    min-height: 50vh; /* Mniejsza wysokość */
-    padding: 0; 
-}
-
-ul.dokumenty_2 li {
-    padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
-    border-radius: 5px;
-    margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center; /* Centruje tekst i ikonę */
-    min-height: fit-content !important;
-    text-align: center;
-}
-
-ul.dokumenty_2 li a {
-    opacity: 1;
-    line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
-    font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
-    min-height: fit-content !important;
-    margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
-}
-
-ul.dokumenty_2 li span {
-    font-size: 40px; /* Jeszcze mniejsza ikona */
-    margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
-}
-
-/* Dodatkowy odstęp dla ostatniego elementu */
-ul.dokumenty_2 li:last-child {
-    margin-bottom: 15px;
-}
-
-
-
-    
-    .oleanpiada h3{
-
+    .oleanpiada h3 {
         font-size: 15px;
         text-align: center;
     }
-
-    h3#final{
-
+    h3#final {
         font-size: 20px;
-    
-    
     }
 
-    
-
-    .grant p{
+    .grant p {
         font-size: 13px;
     }
 
-
-    .partners{
+    .partners {
         display: flex;
         flex-direction: row;
         text-align: center;
         justify-content: center;
     }
-    
-
-    .partner{
+    .partner {
         margin-top: 30px;
     }
 
-
-
-    .contact-container{
-        
-        flex-direction: column!important;
+    .contact-container {
+        flex-direction: column !important;
     }
 }
-   
 
+/* 651px - 1200px */
+@media screen and (min-width: 651px) and (max-width: 1200px) {
 
-
-
-@media screen and (min-width: 651px) and (max-width: 1200) {
-
-
-   
-    /*                                   MENU                                       */
-
-
-    .collage{
-        height: 100vh;
-        background-size: 60% !important;
-        background-position: center 55%;
-        background-size: 80%;
-       
+    .sekcje {
+        display: none !important; /* Ukrywa menu główne */
     }
-    
-     .collage p {
-        font-size:17px;
+    .przycisk_menu {
+        display: block !important; /* Pokazuje ikonę menu */
+        font-size: 30px;
+    }
+    .menu_rozwijane {
+        display: none; /* Domyślnie ukryte */
+    }
+    .menu_rozwijane.open {
+        display: block !important; /* Pokazuje menu po kliknięciu */
+    }
+
+    .collage {
+        height: 100vh;
+        background-size: 80% !important;
+        background-position: center 55%;
+    }
+    .collage p {
+        font-size: 17px;
         margin-bottom: 5px;
     }
-        
-    
-    
-    
-    .pierwszy-kafelek{
-    
-          
-            margin-left: 4vw;
-            visibility: hidden;
-            transition: visibility 0s, opacity 0.5s ease-in-out;
-            opacity: 0; /* Dodanie animacji zanikania */
-            cursor: pointer;
+
+    .pierwszy-kafelek {
+        margin-left: 4vw;
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.5s ease-in-out;
+        opacity: 0;
+        cursor: pointer;
     }
-    
-      
-        img.pierwszy-kafelek{
-    
-            max-height: 50px;
-          
-        }
-    
-        .przeswit{
-            display: none;
-        }
-    
-        
-        /*ikonka menu*/
-        .przycisk_menu span{
-            font-size: 18px;
-        }
-    
-    
-        
-        /*                                 MENU 2                                     */
-        
-        
-      
-        .menu_rozwijane a{
-            font-size:16px;
-            transition: font-size 0.8s; 
-        }
-    
-    
-        .informacje {
-            height: 120vh !important;
-            background-color: white;
-            background-size: 100%;
-            background-position: bottom !important;
-        
-            display: flex; /* Włączenie Flexboxa */
-            flex-direction: column; /* Układ w kolumnie */
-            justify-content: center; /* Wycentrowanie w pionie */
-           /* align-items: center; /* Wycentrowanie w poziomie */
-            text-align: center; /* Wyrównanie tekstu */
-        }
-    
-    
-        div.oleanpiada {
-            
-            height: 100vh !important;
-            padding: 30px 0 !important;
-            background-repeat: repeat !important;
-            background-size:100% !important;
-            
-        }
-        
-        div.oleanpiada p {
-            font-size: 1.5rem !important;
-            padding: 0 15vw;
-            margin: 0; /* Usunięcie marginesu domyślnego */
-            margin-left: 40px !important;
-        }
+    img.pierwszy-kafelek {
+        max-height: 50px;
+    }
 
-       
-    
-        
-        
-        .when,
-        .where,
-        .who{
-        
-            display: flex;
-            flex-direction: column;
-            height: auto;
-        
-            padding-bottom: 5px;
-        
-            align-items: center;
-           
-            justify-content: center;
-        }
-        
-        
-        .when_graphic,
-        .where_graphic,
-        .who_graphic{
-        
-            display: flex;
-            flex-direction: row;
-        
-            height: 70;
-        
-        
-            align-items: center;
-            text-align: center;    
-            justify-content: center;
-        
-            padding: 10px 0 10px;
-        
-            background-color: rgba(255, 255, 255, 0.3);
-            
-        }
-    
-        .when_graphic span,
-        .where_graphic span,
-        .who_graphic span{
-            padding:0 15px ;
-            font-size: 50px;
-    
-            
-    
-        }
-    
-    
-    
-        p.text{
-    
-            height: fit-content !important;
-            min-height: 100px;
-            font-weight: bold;
-            font-size: 20px !important;
-            padding:15px !important;
-    
-        }
+    .przeswit {
+        display: none;
+    }
 
+    /* Ikonka menu */
+    .przycisk_menu span {
+        font-size: 40px;
+        margin-right: 20px;
+    }
 
-        .doc {
-            padding: 5px 0 30px ;
-            margin:0!important;
-            background-repeat: repeat !important;
-            background-size: 250% !important; /* Jeszcze mniejsze tło */
-        }
-        
-        ul.dokumenty_2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centruje zawartość */
-            margin: 20px 5px 15px !important; /* Jeszcze mniejsze marginesy */
-            min-height: 50vh; /* Mniejsza wysokość */
-            padding: 0; 
-        }
-        
-        ul.dokumenty_2 li {
-            padding: 5px; /* Mniejsza przestrzeń wewnętrzna */
-            border-radius: 5px;
-            margin: 10px; /* Jeszcze mniejszy odstęp między elementami */
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center; /* Centruje tekst i ikonę */
-            min-height: fit-content !important;
-            text-align: center;
-        }
-        
-        ul.dokumenty_2 li a {
-            opacity: 1;
-            line-height: 1.2 !important; /* Jeszcze mniejsza wysokość linii */
-            font-size: 1.2rem !important; /* Jeszcze mniejsza czcionka */
-            min-height: fit-content !important;
-            margin-top: 2px; /* Jeszcze mniejszy odstęp od góry */
-        }
-        
-        ul.dokumenty_2 li span {
-            font-size: 40px; /* Jeszcze mniejsza ikona */
-            margin-bottom: 2px; /* Jeszcze mniejszy odstęp od tekstu */
-        }
-        
-        /* Dodatkowy odstęp dla ostatniego elementu */
-        ul.dokumenty_2 li:last-child {
-            margin-bottom: 15px;
-        }
+    /* Menu rozwijane */
+    .menu_rozwijane a {
+        font-size: 25pxpx;
+        transition: font-size 0.8s;
+    }
 
-    .partners{
+    .informacje {
+        height: 100vh !important;
+        background-color: white;
+        background-size: 100%;
+        background-position: bottom !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    div.oleanpiada {
+        height: 100vh !important;
+        padding: 30px 0 !important;
+        background-repeat: repeat !important;
+        background-size: 100% !important;
+    }
+    div.oleanpiada p {
+        font-size: 1.5rem !important;
+        padding: 0 15vw;
+        margin: 0;
+        margin-left: 40px !important;
+    }
+
+    .when,
+    .where,
+    .who {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .when_graphic,
+    .where_graphic,
+    .who_graphic {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .when_graphic span,
+    .where_graphic span,
+    .who_graphic span {
+        padding: 0 15px;
+        font-size: 50px;
+    }
+
+    p.text {
+        height: fit-content !important;
+        min-height: 100px;
+        font-weight: bold;
+        font-size: 20px !important;
+        padding: 15px !important;
+    }
+
+    .doc {
+        padding: 5px 0 30px;
+        margin: 0 !important;
+        background-size: 250% !important;
+    }
+    ul.dokumenty_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 5px 15px !important;
+        min-height: 50vh;
+        padding: 0;
+    }
+    ul.dokumenty_2 li {
+        padding: 5px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        min-height: fit-content !important;
+        text-align: center;
+    }
+    ul.dokumenty_2 li a {
+        opacity: 1;
+        line-height: 1.2 !important;
+        font-size: 1.2rem !important;
+        min-height: fit-content !important;
+        margin-top: 2px;
+    }
+    ul.dokumenty_2 li span {
+        font-size: 40px;
+        margin-bottom: 2px;
+    }
+    ul.dokumenty_2 li:last-child {
+        margin-bottom: 15px;
+    }
+
+    .partners {
         display: flex;
         flex-direction: row;
         text-align: center;
         justify-content: center;
     }
-
-    .partner{
+    .partner {
         margin-top: 50px;
     }
-    
-
-    .partner h3, 
-    .glowny_partner h3{
-
-    font-size: 18px;
+    .partner h3,
+    .glowny_partner h3 {
+        font-size: 18px;
     }
-   
 }
 
-@media (max-width: 650px) {
-    
-    .nawigacja .sekcje
-  {
-        display: none;
+/* Dodatkowo (max-width: 650px) */
+
+@media (max-width: 700px) {
+    .sekcje {
+        display: none !important; /* Ukrywa menu główne */
     }
-
-    .nawigacja .przycisk_menu{
-        display:block;
+    .przycisk_menu {
+        display: block !important; /* Pokazuje ikonę menu */
     }
-
-    .menu_rozwijane{
-     
-        display:block;
+    .menu_rozwijane {
+        display: none; /* Domyślnie ukryte */
     }
-
-    
-    .przycisk_menu{
-        flex:1;
-        text-align: right;
-        padding-right: 35px;
-        
+    .menu_rozwijane.open {
+        display: block !important; /* Pokazuje menu po kliknięciu */
     }
-
-   
-
-    .grant p{
-        font-size: 14px;
-    }
-  
-    .oleanpiada h3{
-
-        font-size: 17px;
-        text-align: center;
-    }
-
-    h3#final{
-
-        font-size: 22px;
-    
-    
-    }
-
-
-   
-
-
 }
 
 
-
-
-
-@media screen and (max-width:500px) and (pointer: coarse){
-
-    
-    body{
+/* max-width: 500px + pointer: coarse */
+@media screen and (max-width: 500px) and (pointer: coarse) {
+    body {
         margin-top: 150px;
-        
     }
-
-
-    
-    
 }
 
 
-
+@media  (max-width: 1900px) {
+    .doc {
+        background-repeat: repeat !important;
+        background-size: auto; 
+      
+    }
+}

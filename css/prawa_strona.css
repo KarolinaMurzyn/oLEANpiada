@@ -1,135 +1,149 @@
+/* ==========================
+   main.css (prawa_strona.css)
+   - Główna część strony
+   ========================== */
 
-h2{
-    margin-bottom:12px ;
-    text-align: center; 
+/* Tytuły */
+h2 {
+    margin-bottom: 12px;
+    text-align: center;
 }
 
+/* Sekcja „oleanpiada” */
 div.oleanpiada {
     margin-top: 20px;
     padding: 0 150px;
-    background-color:#F8FAFC;
-    background-image: url(../grafika/zebatka.png);
-    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
-    background-size:90%; /* Dopasowuje obraz do dostępnej przestrzeni */
+    background-color: #F8FAFC;
+    background-image: url("../grafika/zebatka.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
     color: black;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Wyśrodkowanie w pionie */
-    align-items: center; /* Wyśrodkowanie w poziomie */
+    justify-content: center; 
+    align-items: center;
     text-align: justify;
+    position: relative;
+
+
+
 }
+
+
+.oleanpiada::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* wysokość warstwy rozmycia – dopasuj do potrzeb */
+    height: 100px;  
+  
+    /* wyłącz interakcję, żeby kliknięcia „przechodziły” na dół */
+    pointer-events: none;
+  
+    /* gradient od przezroczystości do #F8FAFC */
+    background: linear-gradient(
+        rgba(248, 250, 252, 0) 0%,   
+        rgba(255, 255, 255, 0.7) 70%, /* Półprzezroczysta biel w okolicach 70% */
+        rgba(255, 255, 255, 1) 100%   /* Pełna biel od 70% do 100% */
+      );
+  }
+  
 
 div.oleanpiada p {
     font-size: 1.7rem;
     padding: 0 15vw;
-    margin: 0; /* Usunięcie marginesu domyślnego */
+    margin: 0;
 }
 
-
-
-
-#contents{
-
+/* Kontener na treść */
+#contents {
     width: 100%;
 }
 
-.informacje{
+/* Sekcja informacje */
+.informacje {
     height: 100vh;
     background-color: white;
     padding-top: 100px;
-    background-image: url(../grafika/zebatki_info.png);
-    background-repeat: no-repeat; /* Zapobiega powtarzaniu */
-    background-position: right center;
-   
-
+    background-image: url("../grafika/zebatki_info.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
 }
 
 
-.when,
-.where,
-.who{
+.informacje::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* wysokość warstwy rozmycia – dopasuj do potrzeb */
+    height: 50px;  
+  
+    /* wyłącz interakcję, żeby kliknięcia „przechodziły” na dół */
+    pointer-events: none;
+  
+    /* gradient od przezroczystości do #F8FAFC */
+    background: linear-gradient(
+        rgba(248, 250, 252, 0) 0%,   
+        rgba(248, 250, 252, 0.75) 70%, /* Półprzezroczysta biel w okolicach 70% */
+        rgba(248, 250, 252, 1) 100%  /* Pełna biel od 70% do 100% */
+      );
+  }
 
+/* Kafle: when, where, who */
+.when, .where, .who {
     display: flex;
     flex-direction: column;
     height: auto;
-
     padding-bottom: 5px;
-
     align-items: center;
-   
     justify-content: center;
 }
 
-
-.when_graphic,
-.where_graphic,
-.who_graphic{
-
+.when_graphic, .where_graphic, .who_graphic {
     display: flex;
     flex-direction: row;
-
-    height: 70;
-
-
+    height: 70px;
     align-items: center;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
-
     padding: 10px 0 10px;
-
     background-color: rgba(255, 255, 255, 0.3);
-    
 }
 
-
-
-
-
-.when_graphic span,
-.where_graphic span,
-.who_graphic span{
-    padding:0 15px ;
+.when_graphic span, .where_graphic span, .who_graphic span {
+    padding: 0 15px;
     font-size: 50px;
-
-    
-
 }
 
-
-
-p.text{
-
+/* Tekst wewnątrz kafli */
+p.text {
     width: 50%;
     height: 120px;
-    padding:30px 40px;
-    
-
+    padding: 30px 40px;
     font-weight: bold;
     font-size: 25px;
     align-items: center;
-    text-align: center;    
+    text-align: center;
     justify-content: center;
-
     background-color: #00BFB2;
     border-radius: 20px;
 }
-
 .text:hover {
     transform: scale(1.05);
 }
-
-.where_graphic p,
-.who_graphic p,
-.when_graphic p{
-
+.where_graphic p, .who_graphic p, .when_graphic p {
     font-weight: bold;
     font-size: 1.6rem;
-
 }
 
-
-
+/* Dokumenty */
 .doc {
     width: 100%;
     display: flex;
@@ -138,16 +152,19 @@ p.text{
     align-items: center;
     padding: 20px 0 70px;
     margin: 200px 80px;
-    height:fit-content;
+    height: fit-content;
     min-height: fit-content;
-
-    background-image: url(../grafika/naglowek2.png);
+    background-image: url("../grafika/naglowek2.png");
     background-repeat: no-repeat;
     background-size: 220%;
-
-    /* Gradient maskujący górę i dół */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+                                       rgba(0, 0, 0, 1) 20%, 
+                                       rgba(0, 0, 0, 1) 80%, 
+                                       rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+                                rgba(0, 0, 0, 1) 20%, 
+                                rgba(0, 0, 0, 1) 80%, 
+                                rgba(0, 0, 0, 0) 100%);
 }
 
 ul.dokumenty_2 {
@@ -155,18 +172,17 @@ ul.dokumenty_2 {
     flex-direction: column;
     margin: 10px 20px;
     list-style-type: none;
-    padding: 0; 
-    display: flex;
-    flex-wrap: wrap; 
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 ul.dokumenty_2 li {
     padding: 10px 20px;
     border-radius: 12px;
     margin: 15px;
-    width: auto; 
-    max-width: none; 
-    display: inline-block; 
+    width: auto;
+    max-width: none;
+    display: inline-block;
 }
 
 ul.dokumenty_2 li a {
@@ -175,38 +191,33 @@ ul.dokumenty_2 li a {
     opacity: 1;
     line-height: 15px;
     font-size: 2.4rem;
-    text-decoration: none; /* Usunięcie podkreślenia */
+    text-decoration: none;
 }
 
-ul.dokumenty_2 li span{
+ul.dokumenty_2 li span {
     font-size: 40px;
 }
 
-ul.dokumenty_2 li :nth-child(4){
+ul.dokumenty_2 li :nth-child(4) {
     margin-bottom: 50px;
 }
 
-
-
-#og{
-    background-color:#00BFB2;
+#og {
+    background-color: #00BFB2;
     border-radius: 10px;
-    margin:0 0px;
+    margin: 0;
     margin-bottom: 70px;
     padding: 6px 0;
     font-size: 32px;
 }
 
-
-#fplace{
+#fplace {
     margin-bottom: 60px;
-    font-size:28px
+    font-size: 28px;
 }
 
-
-#fplaceteam{
+#fplaceteam {
     margin-bottom: 70px;
-    font-size: 25px ;
+    font-size: 25px;
     color: rgb(227, 64, 64);
-
 }
