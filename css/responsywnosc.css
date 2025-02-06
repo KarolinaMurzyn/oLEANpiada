@@ -38,6 +38,7 @@
 
     /* Ikonka menu */
     .przycisk_menu span {
+
         font-size: 18px;
     }
 
@@ -418,7 +419,7 @@
     /* Ikonka menu */
     .przycisk_menu span {
         font-size: 40px;
-        margin-right: 20px;
+        margin-right: 50px;
     }
 
     /* Menu rozwijane */
@@ -550,6 +551,7 @@
         display: none !important; /* Ukrywa menu główne */
     }
     .przycisk_menu {
+        margin-right: 50px ;
         display: block !important; /* Pokazuje ikonę menu */
     }
     .menu_rozwijane {
@@ -575,4 +577,12 @@
         background-size: auto; 
       
     }
+}
+
+@media  (min-width: 2000px) {
+
+    .informacje{
+        padding-bottom: 50px;
+    }
+
 }
