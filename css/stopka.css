@@ -111,12 +111,9 @@ hr {
 
 /* Dostosowanie do telefonów */
 @media (max-width: 600px) {
-    .logos-container {
-        flex-direction: column;
-    }
-
+    
     .logos-container img {
-        max-width: 100px; /* Zmniejszenie loga na telefonach */
+        max-width: 70px; /* Zmniejszenie loga na telefonach */
     }
 }
 

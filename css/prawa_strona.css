@@ -119,7 +119,7 @@ div.oleanpiada p {
 
 .when_graphic span, .where_graphic span, .who_graphic span {
     padding: 0 15px;
-    font-size: 50px;
+   
 }
 
 /* Tekst wewnątrz kafli */
@@ -151,7 +151,7 @@ p.text {
     justify-content: center;
     align-items: center;
     padding: 20px 0 70px;
-    margin: 200px 80px;
+    margin: 200px 0;
     height: fit-content;
     min-height: fit-content;
     background-image: url("../grafika/naglowek2.png");

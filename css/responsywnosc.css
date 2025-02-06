@@ -4,7 +4,7 @@
    ========================================== */
 
 /* 300px - 400px */
-@media (min-width: 300px) and (max-width: 400px) {
+@media screen and (min-width: 220px) and (max-width: 400px) {
 
     html, body {
         min-width: 300px;
@@ -13,11 +13,11 @@
 
     .collage {
         height: 100vh;
-        background-size: 100%;
-        background-position: center 20%;
+        background-size: 110%;
+        background-position: center 50%;
     }
     .collage p {
-        font-size: 17px;
+        font-size: 25px;
         margin-bottom: 500px;
     }
 
@@ -49,14 +49,14 @@
 
     div.oleanpiada {
         height: fit-content !important;
-        padding: 30px 0 !important;
+        padding: 30px 0 70px !important;
         background-repeat: repeat !important;
         background-size: 100% !important;
     }
     div.oleanpiada p {
-        font-size: 0.8rem;
+        font-size: 0.6rem !important;
         padding: 0 15vw;
-        margin: 0;
+        margin: 0 auto !important;
         margin-left: 40px !important;
     }
 
@@ -89,61 +89,74 @@
     }
 
     /* INFORMACJE */
-    .informacje {
-        height: 120vh !important;
+    div.informacje {
+        min-height: fit-content !important;
         background-color: white;
         padding-top: 0px !important;
         background-size: 100%;
         background-position: bottom !important;
+        justify-content: center;
+        padding-bottom: 5px !important; 
     }
+    
     .when,
     .where,
     .who {
         display: flex;
         flex-direction: column;
         height: auto;
-        padding-bottom: 5px;
+        padding-bottom: 2px !important; 
         align-items: center;
         justify-content: center;
     }
+    
     .when_graphic,
     .where_graphic,
     .who_graphic {
         display: flex;
         flex-direction: row;
-        height: 70;
+        height: auto; 
         align-items: center;
         text-align: center;
         justify-content: center;
-        padding: 10px 0 10px;
+        padding: 5px 0; 
         background-color: rgba(255, 255, 255, 0.3);
     }
+    
     .when_graphic span,
     .where_graphic span,
     .who_graphic span {
-        padding: 0 15px;
-        font-size: 50px;
+        padding: 0 5px; 
+        font-size: 18px; 
     }
-
+    
     p.text {
         height: fit-content !important;
-        min-height: 100px;
+        min-height: 60px; 
         font-weight: bold;
-        font-size: 20px !important;
-        padding: 15px !important;
+        font-size: 10px !important;
+        padding: 10px 20px 0!important; 
+        text-align: center;
+        align-self: center;
     }
+    
     .where_graphic p,
     .who_graphic p,
     .when_graphic p {
         font-weight: bold;
-        font-size: 1.1rem !important;
+        font-size: 1rem !important; /
     }
+
+
+
 
     .doc {
         padding: 5px 0 30px;
         margin: 0 !important;
 
         background-size: 250% !important; /* Jeszcze mniejsze tło */
+        height: fit-content;
+        max-height: 90vh;
     }
     ul.dokumenty_2 {
         display: flex;
@@ -177,19 +190,24 @@
     ul.dokumenty_2 li:last-child {
         margin-bottom: 15px;
     }
+
+
+    .contact-container {
+        flex-direction: column !important;
+    }
 }
 
 /* 401px - 650px */
-@media (min-width: 401px) and (max-width: 650px) {
+@media screen and (min-width: 401px) and (max-width: 650px) {
 
     .collage {
         height: 100vh;
         background-size: 100%;
-        background-position: center 50%;
+        background-position: center 20%;
     }
     .collage p {
         font-size: 17px;
-        margin-bottom: 50px;
+        margin-bottom: 500px;
     }
 
     .pierwszy-kafelek {
