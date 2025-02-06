@@ -374,12 +374,12 @@
 
     .collage {
         height: 100vh;
-        background-size: 80% !important;
-        background-position: center 55%;
+        background-size: 60% !important;
+        background-position: center 45%;
     }
     .collage p {
         font-size: 17px;
-        margin-bottom: 5px;
+        margin-bottom: 70px;
     }
 
     .pierwszy-kafelek {
@@ -418,12 +418,13 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding-top: 0px !important;
         
     }
 
     div.oleanpiada {
         height: 100vh !important;
-        padding: 30px 0 !important;
+        padding: 30px 0 50px !important;
         background-repeat: repeat !important;
         background-size: 100% !important;
     }
