@@ -1,7 +1,6 @@
 ## Overview
 
-A website for 'oLEANpiada' - a lean management competition for high school students, conducted by student scientific club **'SKNZ Zarządzanie**. This project is part of the **AGH LeanLine 4.0** initiative, funded by the university's **"Grant Rektora"** competition.
-
+**oLEANpiada** a lean management competition, currently in its seventh edition, is designed for high school students, organized by the **Student Scientific Club 'SKNZ Zarządzanie'**. Initially launched as part of the AGH LeanLine 4.0 initiative. Following the success of its earlier editions, the competition is now being continued and developed under AGH LeanLine 5.0, funded through the university's "Grant Rektora".
 ## Objective
 
 The primary goal was to create a simple and user-friendly website to facilitate access to information for participants of the "oLEANpiada" competition.
